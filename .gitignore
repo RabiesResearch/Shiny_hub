@@ -1,0 +1,5 @@
+# Files to ignore for upload to GitHub
+archive/
+data/
+docs/
+*.rproj
