@@ -5,8 +5,8 @@ account: rabiesresearch
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 589840
-bundleId: 1721016
+bundleId: 1723708
 url: https://rabiesresearch.shinyapps.io/shiny_hub/
-when: 1543246316.68151
+when: 1543337550.79856
 asMultiple: FALSE
 asStatic: FALSE

@@ -216,16 +216,33 @@ tagList( #needed for shinyjs
                  fluidRow(
                    h4("We are a collective of researchers working on rabies.
                       This hub and associated websites/apps are a way of providing information on the work that we do.",
-                      br(),"Our work is generously supported by a range of organizations.",
-                      style="text-align:center; margin-top:0px;")
+                      br(),"Our work is generously supported by a range of organizations:",
+                      style="text-align:center; margin-top:0px;"),
+                   hr()
                  ), # row END bracket
                  fluidRow(
-                   column(12, class="landing-page-column",
+                   column(2, h3("Tanzania", class="text-primary", style="width: 100%; height: 30vh; display: table-cell;
+                     vertical-align: middle; margin: auto 0;")
+                          ), # column END bracket
+                   column(10, class="landing-page-column",
                           br(),
                           div(class="landing-page-footer-box",
-                              div(class = "landing-page-footer-icon", style="background-image: url(logos/Funders&Partners_banner.png);
-                                    background-size: auto 100%; background-position: center; background-repeat: no-repeat; ")))
-                 ) # row END bracket
+                              div(class = "landing-page-footer-icon", style="background-image: url(logos/tz_banner.png);
+                                    background-size: auto 100%; background-position: center; background-repeat: no-repeat; "))
+                          ) # column END bracket
+                 ), # row END bracket
+                 fluidRow(
+                   column(2,
+                          h3("Philippines", class="text-primary", style="width: 100%; height: 30vh; display: table-cell;
+                     vertical-align: middle; margin: auto 0;")
+                   ), # column END bracket
+                   column(10, class="landing-page-column",
+                          br(),
+                          div(class="landing-page-footer-box",
+                              div(class = "landing-page-footer-icon", style="background-image: url(logos/phil_banner.png);
+                                  background-size: auto 60%; background-position: center; background-repeat: no-repeat; "))
+                          ) # column END bracket
+                   ) # row END bracket
                ) # main panel END bracket
              ), # tab panel END bracket
 
