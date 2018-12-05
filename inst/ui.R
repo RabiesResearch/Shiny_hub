@@ -269,10 +269,7 @@ tagList( #needed for shinyjs
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Dr. Katie Hampson ")),
                                                    h5(HTML("<em></em>")),
-                                                   h5("some text here... some text here... some text here...
-                                               some text here... some text here... some text here...
-                                               some text here... some text here... some text here...
-                                               some text here... some text here... some text here..."))
+                                                   h5(""))
                                      ), # column END bracket
                                      column(3)
                                    ), # row END bracket
