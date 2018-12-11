@@ -16,48 +16,48 @@ tagList( #needed for shinyjs
                    ".well {background-color:#ffffff; border: 0px solid #336699; padding: 5px; box-shadow: none; }",
                    #Padding of columns
                    ".col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2,
-                            .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4,
-                            .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6,
-                            .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7,
-                            .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9,
-                            .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11,
-                            .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
-                            padding-left: 5px; padding-right: 5px;}",
+                   .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4,
+                   .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6,
+                   .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7,
+                   .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9,
+                   .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11,
+                   .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+                   padding-left: 5px; padding-right: 5px;}",
                    #landing page boxes
                    ".landing-page-box {width:100%; height:100%; min-height:40vh; background-color:white;
-                            border: 0px; margin-bottom: 5px; float: left; transition: 0.5s ease; position: relative; object-fit: scale-down;}",
+                   border: 0px; margin-bottom: 5px; float: left; transition: 0.5s ease; position: relative; object-fit: scale-down;}",
                    ".landing-page-box-about {width:100%; height:100%; min-height:10.7vh; background-color:white;
-                            border: 1px solid #AAAAAA; margin-bottom: 5px; float: left; position: relative; object-fit: scale-down;}",
+                   border: 1px solid #AAAAAA; margin-bottom: 5px; float: left; position: relative; object-fit: scale-down;}",
                    ".landing-page-box:hover, .landing-page-box-about:hover {-webkit-transform: scale(1.05);
-                            -ms-transform: scale(1.05); transform: scale(1.05); }", #hover effect on boxes
+                   -ms-transform: scale(1.05); transform: scale(1.05); }", #hover effect on boxes
                    #landing page icons
                    ".landing-page-icon {width:100%; height:100%; min-height:12vh; background-color: white;
-                            border: 0px ; position: absolute; object-fit: scale-down;}",
+                   border: 0px ; position: absolute; object-fit: scale-down;}",
                    ".landing-page-about-icon {width:100%; height:65%; min-height:5vh; background-color: white;
-                            border: 0px; position: absolute; object-fit: scale-down;}",
+                   border: 0px; position: absolute; object-fit: scale-down;}",
                    #landing-page titles for boxes
                    ".landing-page-box-title {font-size: 16px; text-align:center; color: black;
-                            font-weight: bold; background-color: none; width:100%; max-height: 20px; margin-top: 10px}",
+                   font-weight: bold; background-color: none; width:100%; max-height: 20px; margin-top: 10px}",
                    ".landing-page-box-title-rotated {font-size: 16px; color: black; text-align: center;
-                            font-weight: bold; background-color: none; width: 150px; max-height: 50px; margin-top: 10px;
-                            -webkit-transform: rotate(-90deg); -webkit-transform-origin: left center;
-                            -moz-transform: rotate(-90deg); -moz-transform-origin: left center;
-                            -ms-transform: rotate(-90deg); -ms-transform-origin: left center;
-                            -o-transform: rotate(-90deg); -o-transform-origin: left center;
-                            transform: rotate(-90deg); transform-origin: left center;
-                            position: absolute; top: 70%; left: 20px; white-space: normal; z-index: 1}",
+                   font-weight: bold; background-color: none; width: 150px; max-height: 50px; margin-top: 10px;
+                   -webkit-transform: rotate(-90deg); -webkit-transform-origin: left center;
+                   -moz-transform: rotate(-90deg); -moz-transform-origin: left center;
+                   -ms-transform: rotate(-90deg); -ms-transform-origin: left center;
+                   -o-transform: rotate(-90deg); -o-transform-origin: left center;
+                   transform: rotate(-90deg); transform-origin: left center;
+                   position: absolute; top: 70%; left: 20px; white-space: normal; z-index: 1}",
                    #landing page buttons
                    ".landing-page-button {text-align:center;
-                          background-image:none; color: black; white-space: normal; border-radius: 0;border: 0px;
-                          font-size: 16px; min-height: 100%; position: absolute; margin-bottom: 0px; margin-top: 5px; float: middle;width: 100%; opacity: 0;}",
+                   background-image:none; color: black; white-space: normal; border-radius: 0;border: 0px;
+                   font-size: 16px; min-height: 100%; position: absolute; margin-bottom: 0px; margin-top: 5px; float: middle;width: 100%; opacity: 0;}",
                    #hover effect on landing page buttons
                    ".landing-page-button:hover , .landing-page-button:active , .landing-page-button-about:hover, .landing-page-button-about:active {opacity: 1;
-                            background-color: #fff; /* fallback */
-                            background-color: rgba(255, 255, 255, 0.8);
-                            color: black;
-                            border-color: #fff; /* fallback */
-                            border-color: rgba(255, 255, 255, 0.8); transition: background-color 0.3s ease-in,
-                            color 0.3s ease-in;}",
+                   background-color: #fff; /* fallback */
+                   background-color: rgba(255, 255, 255, 0.8);
+                   color: black;
+                   border-color: #fff; /* fallback */
+                   border-color: rgba(255, 255, 255, 0.8); transition: background-color 0.3s ease-in,
+                   color 0.3s ease-in;}",
                    #center image - for normal icons
                    "img.center {object-fit: scale-down; position:absolute; width:100%; height:100%; margin-left:auto; margin-right: auto; display: block; padding:20px;}",
                    #center image - for about icons
@@ -68,16 +68,16 @@ tagList( #needed for shinyjs
                    ".icon-lp{font-size: 1.3em; padding-right: 4px;}",
                    #landing page footer items
                    ".landing-page-footer-icon {width:100%; height:100%; min-height:100%; background-color: white;
-                            border: 0px ; position: absolute; object-fit: contain;}",
+                   border: 0px ; position: absolute; object-fit: contain;}",
                    ".landing-page-footer-box {width:100%; height:100%; min-height:30vh; background-color:white;
-                            border: 0px; margin-bottom: 5px; float: left; transition: 0.5s ease; position: relative; object-fit: contain;}",
+                   border: 0px; margin-bottom: 5px; float: left; transition: 0.5s ease; position: relative; object-fit: contain;}",
                    # image alignments for "meet the team"
                    ".team-page-icon-box {width:100%; height:100%; min-height: 45vh; background-color:white;
-                            border: 0px; margin-bottom: 2px; float: left; position: relative; object-fit: scale-down;}",
+                   border: 0px; margin-bottom: 2px; float: left; position: relative; object-fit: scale-down;}",
                    ".team-page-icon {width: 100%; height: 100%; min-height: 45vh; background-color: white;
-                            border: 0px; position: absolute; object-fit: scale-down; vertical-align: middle;}",
+                   border: 0px; position: absolute; object-fit: scale-down; vertical-align: middle;}",
                    ".team-page-text {width: 100%; height: 30vh; display: table-cell;
-                     vertical-align: middle; margin: auto 0;}",
+                   vertical-align: middle; margin: auto 0;}",
 
                    #HTML("<base target='_blank'>"),
                    HTML("hr {border-top: 2px dotted #7c7c7c;}",
@@ -116,9 +116,9 @@ tagList( #needed for shinyjs
                           div(class="landing-page-box",
                               div("Mara Region", class = "landing-page-box-title"),
                               div(class = "landing-page-icon", style="background-image: url(maps/mara_map.png);
-                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
+                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br>
-                                                      <em>Implementation research on vaccination and surveillance approaches</em>"),
+                                                          <em>Implementation research on vaccination and surveillance approaches</em>"),
                                            class="landing-page-button"
                                            #icon = icon("arrow-circle-right", "icon-lp")
                                            #onclick ="window.open('https://rsteenson.github.io/webtest/', '_blank')"
@@ -128,7 +128,7 @@ tagList( #needed for shinyjs
                           div(class="landing-page-box",
                               div("Serengeti District", class = "landing-page-box-title"),
                               div(class = "landing-page-icon", style="background-image: url(maps/ser_map.png);
-                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
+                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('',
                                            label=HTML("Go to Serengeti Website <br><br>
                                                       <em>Long-term contact tracing</em>"),
@@ -140,9 +140,9 @@ tagList( #needed for shinyjs
                           div(class="landing-page-box",
                               div("Ngorongoro District", class = "landing-page-box-title"),
                               div(class = "landing-page-icon", style="background-image: url(maps/ngor_map.png);
-                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
+                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("Go to Ngorongoro Website <br><br>
-                                                      <em>Long-term contact tracing</em>"),
+                                                          <em>Long-term contact tracing</em>"),
                                            class="landing-page-button",
                                            icon = icon("arrow-circle-right", "icon-lp"),
                                            onclick ="window.open('https://rabiesresearch.github.io/Ngorongoro/', '_blank')"))),
@@ -153,59 +153,70 @@ tagList( #needed for shinyjs
                               div(class = "landing-page-icon", style="background-image: url(maps/stz_map.png);
                                   background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br>
-                                                      <em>Large-scale mobile phone-based surveillance</em>"),
+                                                          <em>Large-scale mobile phone-based surveillance</em>"),
                                            class="landing-page-button"
                                            #icon = icon("arrow-circle-right", "icon-lp")
                                            #onclick ="window.open('https://rsteenson.github.io/webtest/', '_blank')"
                               )))
-                 ),
+                   ),
                  br(), br(), # line breaks
                  hr(), # horizontal rule line
 
                  #--------------------------------------------------------------
                  # Create second row of hub
-                 fluidRow(
-                   column(4, h2("Philippines", style="text-align:center; margin-top:0px;", class="text-primary")),
-                   column(4, h2("Indonesia", style="text-align:center; margin-top:0px;", class="text-primary")),
-                   column(4, h2("Latin America", style="text-align:center; margin-top:0px;", class="text-primary"))
-                 ), # row END bracket
-                 fluidRow(
-                   # Link to Philippines website
-                   column(4, class="landing-page-column",
+                 column(4,
+                        fluidRow(
+                          h2("Philippines", style="text-align:center; margin-top:0px;", class="text-primary"),
+                          br(),
+                          # Link to Philippines website
+                          class="landing-page-column",
                           div(class="landing-page-box",
                               div("Romblon & Mindoro Provinces", class = "landing-page-box-title"),
                               div(class = "landing-page-icon", style="background-image: url(maps/phil_study_map.png);
-                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
+                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br>"),
                                            class="landing-page-button"
                                            #icon = icon("arrow-circle-right", "icon-lp")#,
                                            #onclick ="window.open('https://rsteenson.github.io/webtest/', '_blank')"
-                              ))),
-                   # Link to Indonesia website
-                   column(4, class="landing-page-column",
+                              ))
+                          ) # row END bracket
+                   ), # column END bracket
+                 column(4,
+                        fluidRow(
+                          h2("Indonesia", style="text-align:center; margin-top:0px;", class="text-primary"),
+                          br(),
+                          # Link to Philippines website
+                          class="landing-page-column",
                           div(class="landing-page-box",
                               div("", class = "landing-page-box-title"),
                               div(class = "landing-page-icon", style="background-image: url(maps/indon_study_map.png);
-                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
+                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br>"),
                                            class="landing-page-button"
                                            #icon = icon("arrow-circle-right", "icon-lp")
                                            #onclick ="window.open('https://rsteenson.github.io/webtest/', '_blank')"
-                              ))),
-                   # Link to Latin America website
-                   column(4, class="landing-page-column",
+                              ))
+                          ) # row END bracket
+                 ), # column END bracket
+                 column(4,
+                        fluidRow(
+                          h2("Latin America", style="text-align:center; margin-top:0px;", class="text-primary"),
+                          br(),
+                          # Link to Philippines website
+                          class="landing-page-column",
                           div(class="landing-page-box",
                               div("", class = "landing-page-box-title"),
                               div(class = "landing-page-icon", style="background-image: url(maps/latin_america_study_map.png);
-                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
+                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>App being prepared</p> <br>"),
                                            class="landing-page-button"
                                            #icon = icon("arrow-circle-right", "icon-lp")
                                            #onclick ="window.open('https://rsteenson.github.io/webtest/', '_blank')"
-                              )))
-                 ) # row END bracket# row END bracket
-               ) # main panel END bracket
-             ),
+                              ))
+                          ) # row END bracket
+                          ) # column END bracket
+                   ) # main panel END bracket
+                 ),
 
              #------------------------------------------------------------------
              # Create About tab panel
@@ -216,35 +227,18 @@ tagList( #needed for shinyjs
                  fluidRow(
                    h4("We are a collective of researchers working on rabies.
                       This hub and associated websites/apps are a way of providing information on the work that we do.",
-                      br(),"Our work is generously supported by a range of organizations:",
-                      style="text-align:center; margin-top:0px;"),
-                   hr()
+                      br(),"Our work is generously supported by a range of organizations.",
+                      style="text-align:center; margin-top:0px;")
                  ), # row END bracket
                  fluidRow(
-                   column(2, h3("Tanzania", class="text-primary", style="width: 100%; height: 30vh; display: table-cell;
-                     vertical-align: middle; margin: auto 0;")
-                          ), # column END bracket
-                   column(10, class="landing-page-column",
+                   column(12, class="landing-page-column",
                           br(),
                           div(class="landing-page-footer-box",
-                              div(class = "landing-page-footer-icon", style="background-image: url(logos/tz_banner.png);
-                                    background-size: auto 100%; background-position: center; background-repeat: no-repeat; "))
-                          ) # column END bracket
-                 ), # row END bracket
-                 fluidRow(
-                   column(2,
-                          h3("Philippines", class="text-primary", style="width: 100%; height: 30vh; display: table-cell;
-                     vertical-align: middle; margin: auto 0;")
-                   ), # column END bracket
-                   column(10, class="landing-page-column",
-                          br(),
-                          div(class="landing-page-footer-box",
-                              div(class = "landing-page-footer-icon", style="background-image: url(logos/phil_banner.png);
-                                  background-size: auto 60%; background-position: center; background-repeat: no-repeat; "))
-                          ) # column END bracket
-                   ) # row END bracket
-               ) # main panel END bracket
-             ), # tab panel END bracket
+                              div(class = "landing-page-footer-icon", style="background-image: url(logos/Funders&Partners_banner.png);
+                                  background-size: auto 100%; background-position: center; background-repeat: no-repeat; ")))
+                              ) # row END bracket
+                 ) # main panel END bracket
+               ), # tab panel END bracket
 
              #------------------------------------------------------------------
              # Create Contact tab panel
@@ -264,26 +258,23 @@ tagList( #needed for shinyjs
                                      column(2, class="landing-page-column",
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/no_pic.jpg);
-                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
+                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
+                                                ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Dr. Katie Hampson ")),
                                                    h5(HTML("<em></em>")),
                                                    h5(""))
                                      ), # column END bracket
                                      column(3)
-                                   ), # row END bracket
-                                   fluidRow(
-                                     br()
-                                   ), # row END bracket
-                                   fluidRow(
-                                  #---------------#
+                                     ), # row END bracket
+                                   #---------------#
                                    # Kirstyn Brunker
+                                   fluidRow(
                                      column(2, class="landing-page-column",
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/kirstyn_b2.jpg);
-                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
+                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
+                                                ), # column END bracket
                                      column(4,
                                             div(class="team-page-text",
                                                 h4(tags$b("Dr. Kirstyn Brunker"), HTML("&emsp;"),
@@ -302,14 +293,14 @@ tagList( #needed for shinyjs
                                                    lab-in-a-suitcase approach, using Oxford Nanopore’s MinION sequencer, to build
                                                    capacity for Rabies genomic surveillance in low-resource settings. This has been
                                                    successfully tested in the field in Tanzania."))
-                                     ), # column END bracket
+                                                ), # column END bracket
                                      #---------------#
                                      # Elaine Ferguson
                                      column(2, class="landing-page-column",
                                             div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/elaine_f2.jpg);
+                                                div(class = "team-page-icon", style="background-image: url(team/elaine_f.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
+                                                ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Dr. Elaine Ferguson "), HTML("&emsp;"),
                                                       tags$a(href = "https://twitter.com/ElaineAFerguson",  icon("twitter"),
@@ -322,31 +313,19 @@ tagList( #needed for shinyjs
                                                       eliminate rabies."),
                                                    h5("Through these analyses, Elaine also aims to determine the roles of dog movements and
                                                       the density and distribution of dog populations in maintaining rabies transmission."))
-                                     ) # column END bracket
-                                   ), # row END bracket
-                                  fluidRow(
-                                    br()
-                                  ), # row END bracket
-                                  fluidRow(
+                                                   ) # column END bracket
+                                                   ), # row END bracket
+                                   fluidRow(
                                      #-------------#
                                      # Anna Czupryna
                                      column(2, class="landing-page-column",
                                             div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/anna_c2.jpg);
+                                                div(class = "team-page-icon", style="background-image: url(team/no_pic.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
+                                                ), # column END bracket
                                      column(4, div(class="team-page-text",
-                                                   h4(tags$b("Dr. Anna Czupryna ")),
-                                                   h5(HTML("<em>Postdoctoral Research Assistant</em>")),
-                                                   h5("Anna is based at the University of Glasgow, working in Tanzania coordinating field research,
-                                                      activities for the Rabies Elimination Project. "),
-                                                   h5("She received her PhD from the University of Illinois at Chicago, studying domestic dog population
-                                                      dynamics in villages near Serengeti National Park in Tanzania. Her dissertation research, 'The
-                                                      Ecology of Free-Roaming Domestic Dogs in Rural Villages near Serengeti National Park', involved
-                                                      an innovative multidisciplinary approach that integrated demography, endocrinology and public health. "),
-                                                   h5("Anna is currently working with the field team in Mugumu, near SNP, on streamlining data collection,
-                                                      developing training programs for village rabies coordinators, and coordinating data collection, dog
-                                                      vaccination, and research protocols. "))
+                                                   h4(tags$b("Anna Czupryna ")),
+                                                   h5(HTML("<em>Post-doc</em>")))
                                      ), # column END bracket
                                      #---------------#
                                      # Rachel Steenson
@@ -354,26 +333,21 @@ tagList( #needed for shinyjs
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/rachel_s.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
+                                                ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Rachel Steenson "), HTML("&emsp;"),
-                                                         tags$a(href = "https://twitter.com/RachelSSteenson",  icon("twitter"),
-                                                                target="_blank", class="text-primary")),
+                                                      tags$a(href = "https://twitter.com/RachelSSteenson",  icon("twitter"),
+                                                             target="_blank", class="text-primary")),
                                                    h5(HTML("<em>Research Assistant</em>")),
-                                                   h5("I’m interested in how disease surveillance systems can be used to educate and
-                                                      improve monitoring/control guidelines, particularly those involving zoonoses."),
                                                    h5("My role involves developing code pipelines to clean, process, analyse and visualise
                                                       data with minimal user input; these pipelines are used to create fortnightly progress and
                                                       caselist reports for the field team, provide efficient frameworks for modelling, and build
                                                       the websites available through this Hub."),
                                                    h5("I’m also responsible for fixing issues in our contact tracing data and
                                                       updating spatial files to match the continually changing semi-rural areas in Tanzania."))
-                                     ) # column END bracket
-                                   ), # row END bracket
-                                  fluidRow(
-                                    br()
-                                  ), # row END bracket
-                                  #---------------#
+                                                   ) # column END bracket
+                                     ), # row END bracket
+                                   #---------------#
                                    # Laurie Baker
                                    fluidRow(
                                      column(2, class="landing-page-column",
@@ -396,12 +370,12 @@ tagList( #needed for shinyjs
                                                    Friedrich-Loeffler Institute in Germany, Elias Krainski at the Universidade Federal do Paraná,
                                                    and Håvard Rue at King Abdullah University of Science and Technology (KAUST)."))
                                                 ) # column END bracket
-                                   ), # row END bracket
+                                                ), # row END bracket
                                    fluidRow(
                                      br(), br()
                                    ) # row END bracket
-                                 ) # main panel END bracket
-                        ), # tab panel END bracket
+                                                ) # main panel END bracket
+                                     ), # tab panel END bracket
                         #-------------------------------------------------------
                         # Tanzania Team section
                         tabPanel(title = "Tanzania Team",
@@ -417,18 +391,10 @@ tagList( #needed for shinyjs
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/matiko_t.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
+                                                ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Matiko Tiringa ")),
-                                                   h5(HTML("<em>Project Field Officer</em>")),
-                                                   h5("Matiko carries out contact tracing in Serengeti and Ngorongoro districts. Individuals
-                                                      bitten by an animal are located and interviewed to collect detailed data on a bite
-                                                      incident, and decide if it was a probable Rabies exposure. He follows the chain of interactions
-                                                      to other human and animal bite victims to identify how the infection began, collecting data at
-                                                      every step and educating communities about Rabies. "),
-                                                   h5("Matiko also collects tissue samples from recently deceased probable Rabid animals, and completes
-                                                      a Rapid Diagnostic Test to gain a preliminary result on Rabies status. These samples are then sent
-                                                      to the laboratory for confirmation and sequencing."))
+                                                   h5(HTML("<em>Field Officer</em>")))
                                      ), # column END bracket
                                      #---------------#
                                      # Rena Herman
@@ -436,15 +402,12 @@ tagList( #needed for shinyjs
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/no_pic.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
+                                                ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Rena Herman ")),
                                                    h5(HTML("<em>Driver</em>")))
                                      ) # column END bracket
-                                   ), # row END bracket
-                                   fluidRow(
-                                     br()
-                                   ), # row END bracket
+                                     ), # row END bracket
                                    fluidRow(
                                      #---------------#
                                      # Kennedy Lushasi
@@ -452,7 +415,7 @@ tagList( #needed for shinyjs
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/kennedy_l.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
+                                                ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Kennedy Lushasi ")),
                                                    h5(HTML("<em>AO-ASPIRE PhD Student</em>")),
@@ -467,123 +430,120 @@ tagList( #needed for shinyjs
                                                    h5("Kennedy works very closely with government health and veterinary workers
                                                       that coordinate field operations, district medical and veterinary officers, livestock
                                                       field officers, public health workers, and the wider community."))
-                                     ), # column END bracket
+                                                   ), # column END bracket
                                      #---------------#
                                      # Ahmed Lugelo
-                                      column(2, class="landing-page-column",
-                                             div(class="team-page-icon-box",
-                                                 div(class = "team-page-icon", style="background-image: url(team/ahmed_l.jpg);
-                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                      ), # column END bracket
-                                      column(4, div(class="team-page-text",
-                                                    h4(tags$b("Ahmed Lugelo ")),
-                                                    h5(HTML("<em>AO-ASPIRE PhD Student</em>")),
-                                                    h5("Over the past 6 years, I have coordinated surveillance and control of Rabies research in
-                                                       Northern Tanzania. My PhD focuses on the development of a cost-effective and sustainable
-                                                       strategy for regional elimination of rabies."),
-                                                    h5("This involves: developing and conducting field tests to determine the performance of
-                                                       ‘Temperature Controlled Storage Devices’ (TCSD); implementing a randomized control trial
-                                                       to determine the potency of thermotolerant rabies vaccine (Nobivac® Rabies vaccine) following
-                                                       storage in novel TCSD at varying field conditions; and evaluate the vaccination coverage
-                                                       achieved by Centralized Team-Led strategy and Decentralized Community-Led strategies."),
-                                                    h5("I work closely with local communities, government animal health professionals (MoLFD), as
-                                                       well as multiple research institutes including Sokoine University of Agriculture, Ifakara
-                                                       Health Institute, University of Glasgow and Washington State University."))
-                                   ) # column END bracket
-                                 ), # row END bracket
-                                 fluidRow(
-                                   br()
-                                 ), # row END bracket
-                                 fluidRow(
-                                   #---------------#
-                                   # Christian Tetteh
-                                   column(2, class="landing-page-column",
-                                          div(class="team-page-icon-box",
-                                              div(class = "team-page-icon", style="background-image: url(team/no_pic.jpg);
+                                     column(2, class="landing-page-column",
+                                            div(class="team-page-icon-box",
+                                                div(class = "team-page-icon", style="background-image: url(team/ahmed_l.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                   ), # column END bracket
-                                   column(4, div(class="team-page-text",
-                                                 h4(tags$b("Christian Tetteh ")),
-                                                 h5(HTML("<em>PhD Student</em>")))
-                                   ), # column END bracket
-                                   #---------------#
-                                   # Joel Changalucha
-                                   column(2, class="landing-page-column",
-                                          div(class="team-page-icon-box",
-                                              div(class = "team-page-icon", style="background-image: url(team/joel_c.jpg);
-                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                   ), # column END bracket
-                                   column(4, div(class="team-page-text",
-                                                 h4(tags$b("Joel Changalucha")),
-                                                 h5(HTML("<em>Research Scientist</em>")),
-                                                 h5("Joel has extensive history on One-Health surveillance approaches; his recent research
-                                                    involves piloting a surveillance system whereby health and veterinary workers report Rabies
-                                                    cases, animal bites, use of post-exposure vaccines and mass dog vaccination campaigns using
-                                                    a mobile phone app. "),
-                                                 h5("Joel’s interest is on evaluating public health intervention using social and economic approaches.
-                                                    His responsibilities include: developing cost effective intervention for controlling diseases;
-                                                    developing methods of evaluating these interventions; and aligning the research needs to the
-                                                    existing health and veterinary system to enable smooth integrations of research findings."),
-                                                 h5("Joel brings to his position a well-established background in health system and clinical practice
-                                                    of rural settings; this has helped in sustaining the requirements of the mobile phone surveillance
-                                                    system in Tanzania."))
-                                   ) # column END bracket
-                                 ), # row END bracket
-                                 fluidRow(
-                                   br()
-                                 ), # row END bracket
-                                 fluidRow(
-                                   #---------------#
-                                   # Maganga Sambo
-                                   column(2, class="landing-page-column",
-                                          div(class="team-page-icon-box",
-                                              div(class = "team-page-icon", style="background-image: url(team/maganga_s.jpg);
-                                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                              ), # column END bracket
-                                   column(4, div(class="team-page-text",
-                                                 h4(tags$b("Maganga Sambo ")),
-                                                 h5(HTML("<em>PhD Student</em>")),
-                                                 h5("Mass vaccination is known to be the cornerstone for effective control of canine rabies; however,
-                                                    there is little scientific guidance for the best way of evaluating and monitoring the success of the
-                                                    implementations of dog vaccination campaigns."),
-                                                 h5("Maganga's PhD focuses on measuring, monitoring and improving mass dog vaccination programmes to
-                                                    inform control and eliminate rabies."),
-                                                 h5("Maganga conducted post-vaccination evaluations: households, school-based and transect surveys.
-                                                    He compared these survey methods to see which methods provide precise estimates of vaccination
-                                                    coverage and dog population sizes. This work guides the ongoing and future dog vaccinations on a
-                                                    large scale in sub-Saharan Africa"))
-                                   ), # column END bracket
-                                   #---------------#
-                                   # Zilpah Kaare
-                                   column(2, class="landing-page-column",
-                                          div(class="team-page-icon-box",
-                                              div(class = "team-page-icon", style="background-image: url(team/ziplah_k.jpg);
-                                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                              ), # column END bracket
-                                   column(4, div(class="team-page-text",
-                                                 h4(tags$b("Zilpah Kaare")),
-                                                 h5(HTML("<em>Data Collector</em>")),
-                                                 h5("Zilpah collects and collates hospital records within the study areas involved in the project.
-                                                     She also enters and uploads data into the project database."))
-                                                 ) # column END bracket
+                                                ), # column END bracket
+                                     column(4, div(class="team-page-text",
+                                                   h4(tags$b("Ahmed Lugelo ")),
+                                                   h5(HTML("<em>AO-ASPIRE PhD Student</em>")),
+                                                   h5("Over the past 6 years, I have coordinated surveillance and control of Rabies research in
+                                                      Northern Tanzania. My PhD focuses on the development of a cost-effective and sustainable
+                                                      strategy for regional elimination of rabies."),
+                                                   h5("This involves: developing and conducting field tests to determine the performance of
+                                                      ‘Temperature Controlled Storage Devices’ (TCSD); implementing a randomized control trial
+                                                      to determine the potency of thermotolerant rabies vaccine (Nobivac® Rabies vaccine) following
+                                                      storage in novel TCSD at varying field conditions; and evaluate the vaccination coverage
+                                                      achieved by Centralized Team-Led strategy and Decentralized Community-Led strategies."),
+                                                   h5("I work closely with local communities, government animal health professionals (MoLFD), as
+                                                      well as multiple research institutes including Sokoine University of Agriculture, Ifakara
+                                                      Health Institute, University of Glasgow and Washington State University."))
+                                                   ) # column END bracket
+                                                   ), # row END bracket
+                                   fluidRow(
+                                     br()
                                    ), # row END bracket
-                                 fluidRow(
-                                   br(), br()
-                                 ) # row END bracket
-                        ) # main panel END bracket
-             )# tab panel END bracket
-  ) # navbar menu END bracket
-), # navbar page END bracket
+                                   fluidRow(
+                                     #---------------#
+                                     # Christian Tetteh
+                                     column(2, class="landing-page-column",
+                                            div(class="team-page-icon-box",
+                                                div(class = "team-page-icon", style="background-image: url(team/no_pic.jpg);
+                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
+                                                ), # column END bracket
+                                     column(4, div(class="team-page-text",
+                                                   h4(tags$b("Christian Tetteh ")),
+                                                   h5(HTML("<em>PhD Student</em>")))
+                                     ), # column END bracket
+                                     #---------------#
+                                     # Joel Changalucha
+                                     column(2, class="landing-page-column",
+                                            div(class="team-page-icon-box",
+                                                div(class = "team-page-icon", style="background-image: url(team/joel_c.jpg);
+                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
+                                                ), # column END bracket
+                                     column(4, div(class="team-page-text",
+                                                   h4(tags$b("Joel Changalucha")),
+                                                   h5(HTML("<em>Research Scientist</em>")),
+                                                   h5("Joel has extensive history on One-Health surveillance approaches; his recent research
+                                                      involves piloting a surveillance system whereby health and veterinary workers report Rabies
+                                                      cases, animal bites, use of post-exposure vaccines and mass dog vaccination campaigns using
+                                                      a mobile phone app. "),
+                                                   h5("Joel’s interest is on evaluating public health intervention using social and economic approaches.
+                                                      His responsibilities include: developing cost effective intervention for controlling diseases;
+                                                      developing methods of evaluating these interventions; and aligning the research needs to the
+                                                      existing health and veterinary system to enable smooth integrations of research findings."),
+                                                   h5("Joel brings to his position a well-established background in health system and clinical practice
+                                                      of rural settings; this has helped in sustaining the requirements of the mobile phone surveillance
+                                                      system in Tanzania."))
+                                                   ) # column END bracket
+                                                   ), # row END bracket
+                                   fluidRow(
+                                     #---------------#
+                                     # Maganga Sambo
+                                     column(2, class="landing-page-column",
+                                            div(class="team-page-icon-box",
+                                                div(class = "team-page-icon", style="background-image: url(team/maganga_s.jpg);
+                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
+                                                ), # column END bracket
+                                     column(4, div(class="team-page-text",
+                                                   h4(tags$b("Maganga Sambo ")),
+                                                   h5(HTML("<em>PhD Student</em>")),
+                                                   h5("Mass vaccination is known to be the cornerstone for effective control of canine rabies; however,
+                                                      there is little scientific guidance for the best way of evaluating and monitoring the success of the
+                                                      implementations of dog vaccination campaigns."),
+                                                   h5("Maganga's PhD focuses on measuring, monitoring and improving mass dog vaccination programmes to
+                                                      inform control and eliminate rabies."),
+                                                   h5("Maganga conducted post-vaccination evaluations: households, school-based and transect surveys.
+                                                      He compared these survey methods to see which methods provide precise estimates of vaccination
+                                                      coverage and dog population sizes. This work guides the ongoing and future dog vaccinations on a
+                                                      large scale in sub-Saharan Africa"))
+                                                   ), # column END bracket
+                                     #---------------#
+                                     # Zilpah Kaare
+                                     column(2, class="landing-page-column",
+                                            div(class="team-page-icon-box",
+                                                div(class = "team-page-icon", style="background-image: url(team/ziplah_k.jpg);
+                                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
+                                     ), # column END bracket
+                                     column(4, div(class="team-page-text",
+                                                   h4(tags$b("Zilpah Kaare")),
+                                                   h5(HTML("<em>Data Collector</em>")),
+                                                   h5("Zilpah collects and collates hospital records within the study areas involved in the project.
+                                                     She also enters and uploads data into the project database."))
+                                     ) # column END bracket
+                                                   ), # row END bracket
+                                   fluidRow(
+                                     br(), br()
+                                   ) # row END bracket
+                                                   ) # main panel END bracket
+                                   )# tab panel END bracket
+                                   ) # navbar menu END bracket
+                                     ), # navbar page END bracket
 
-#-----------------------------------------------------------------------------
-# Add footer
-tags$footer(column(3, " Contact us:", HTML("&emsp;"),
-                   tags$a(href="mailto:katiehampson@gmail.com", icon("envelope"),
-                          class="externallink", style = "color: white; text-decoration: none"),
-                   HTML("&emsp;"),
-                   tags$a(href = "https://twitter.com/rabidbites",  icon("twitter"), target="_blank", style = "color: white;")),
-            column(6, "Rabies Research Hub", style= "font-size: 20px; text-align: center; padding-bottom: 5px;"),
-            column(3, "Last updated: ", sys_date, style="font-style: italic; text-align: right;  padding: 5px;"),
-            class="bg-primary",
-            style = "position: fixed;  left: 0; bottom: 0; vertical-align: middle; width: 100%; z-index: 1000; height: 30px; color: white;")
-) # taglist END bracket
+  #-----------------------------------------------------------------------------
+  # Add footer
+  tags$footer(column(3, " Contact us:", HTML("&emsp;"),
+                     tags$a(href="mailto:katiehampson@gmail.com", icon("envelope"),
+                            class="externallink", style = "color: white; text-decoration: none"),
+                     HTML("&emsp;"),
+                     tags$a(href = "https://twitter.com/rabidbites",  icon("twitter"), target="_blank", style = "color: white;")),
+              column(6, "Rabies Research Hub", style= "font-size: 20px; text-align: center; padding-bottom: 5px;"),
+              column(3, "Last updated: ", sys_date, style="font-style: italic; text-align: right;  padding: 5px;"),
+              class="bg-primary",
+              style = "position: fixed;  left: 0; bottom: 0; vertical-align: middle; width: 100%; z-index: 1000; height: 30px; color: white;")
+               ) # taglist END bracket
