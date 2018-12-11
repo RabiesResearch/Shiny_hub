@@ -38,20 +38,21 @@ tagList( #needed for shinyjs
                    #landing-page titles for boxes
                    ".landing-page-box-title {font-size: 16px; text-align:center; color: black;
                    font-weight: bold; background-color: none; width:100%; max-height: 20px; margin-top: 10px}",
-                   ".landing-page-box-title-rotated {font-size: 16px; color: black; text-align: center;
-                   font-weight: bold; background-color: none; width: 150px; max-height: 50px; margin-top: 10px;
-                   -webkit-transform: rotate(-90deg); -webkit-transform-origin: left center;
-                   -moz-transform: rotate(-90deg); -moz-transform-origin: left center;
-                   -ms-transform: rotate(-90deg); -ms-transform-origin: left center;
-                   -o-transform: rotate(-90deg); -o-transform-origin: left center;
-                   transform: rotate(-90deg); transform-origin: left center;
-                   position: absolute; top: 70%; left: 20px; white-space: normal; z-index: 1}",
                    #landing page buttons
                    ".landing-page-button {text-align:center;
                    background-image:none; color: black; white-space: normal; border-radius: 0;border: 0px;
-                   font-size: 16px; min-height: 100%; position: absolute; margin-bottom: 0px; margin-top: 5px; float: middle;width: 100%; opacity: 0;}",
+                   font-size: 16px; min-height: 100%; position: absolute; margin-bottom: 0px; margin-top: 5px; float: middle; width: 100%; opacity: 0;}",
+                   ".landing-page-button-stacked-1 {text-align:center; position: absolute;
+                   background-image:none; color: black; white-space: normal; border-radius: 0;border: 0px;
+                   font-size: 16px; height: 40%; bottom: 40%; width: 100%; opacity: 0;}",
+                   ".landing-page-button-stacked-2 {text-align:center; position: absolute;
+                   background-image:none; color: black; white-space: normal; border-radius: 0;border: 0px;
+                   font-size: 16px; height: 40%; bottom: 0px; width: 100%; opacity: 0;}",
                    #hover effect on landing page buttons
-                   ".landing-page-button:hover , .landing-page-button:active , .landing-page-button-about:hover, .landing-page-button-about:active {opacity: 1;
+                   ".landing-page-button:hover , .landing-page-button:active , .landing-page-button-stacked-1:hover ,
+                   .landing-page-button-stacked-1:active , .landing-page-button-stacked-2:hover ,
+                   .landing-page-button-stacked-2:active , .landing-page-button-about:hover, .landing-page-button-about:active {
+                   opacity: 1;
                    background-color: #fff; /* fallback */
                    background-color: rgba(255, 255, 255, 0.8);
                    color: black;
@@ -111,7 +112,7 @@ tagList( #needed for shinyjs
                              style="text-align:center; margin-top:0px; ")
                  ), # row END bracket
                  fluidRow(
-                   # Link to Mara report
+                   # Link to Mara website
                    column(3, class="landing-page-column",
                           div(class="landing-page-box",
                               div("Mara Region", class = "landing-page-box-title"),
@@ -123,7 +124,7 @@ tagList( #needed for shinyjs
                                            #icon = icon("arrow-circle-right", "icon-lp")
                                            #onclick ="window.open('https://rsteenson.github.io/webtest/', '_blank')"
                               ))),
-                   # Link to Serengeti report
+                   # Link to Serengeti website
                    column(3, class="landing-page-column",
                           div(class="landing-page-box",
                               div("Serengeti District", class = "landing-page-box-title"),
@@ -135,7 +136,7 @@ tagList( #needed for shinyjs
                                            class="landing-page-button",
                                            icon = icon("arrow-circle-right", "icon-lp"),
                                            onclick ="window.open('https://rabiesresearch.github.io/Serengeti/', '_blank')"))),
-                   # Link to Ngorongoro report
+                   # Link to Ngorongoro website
                    column(3, class="landing-page-column",
                           div(class="landing-page-box",
                               div("Ngorongoro District", class = "landing-page-box-title"),
@@ -146,19 +147,24 @@ tagList( #needed for shinyjs
                                            class="landing-page-button",
                                            icon = icon("arrow-circle-right", "icon-lp"),
                                            onclick ="window.open('https://rabiesresearch.github.io/Ngorongoro/', '_blank')"))),
-                   # Link to STz report
+                   # Link to STz & Pemba website
                    column(3, class="landing-page-column",
                           div(class="landing-page-box",
-                              div("Southern Tanzania", class = "landing-page-box-title"),
+                              div("S. Tanzania and Pemba", class = "landing-page-box-title"),
                               div(class = "landing-page-icon", style="background-image: url(maps/stz_map.png);
                                   background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
-                              actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br>
-                                                          <em>Large-scale mobile phone-based surveillance</em>"),
-                                           class="landing-page-button"
+                              actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br> S. Tanzania"),
+                                               class="landing-page-button-stacked-1"
                                            #icon = icon("arrow-circle-right", "icon-lp")
                                            #onclick ="window.open('https://rsteenson.github.io/webtest/', '_blank')"
-                              )))
-                   ),
+                              ),
+                              actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br> Pemba Island"),
+                                           class="landing-page-button-stacked-2"
+                                           #icon = icon("arrow-circle-right", "icon-lp")
+                                           #onclick ="window.open('https://rsteenson.github.io/webtest/', '_blank')"
+                              ))
+                   ) # column END bracket
+                 ), # row END bracket
                  br(), br(), # line breaks
                  hr(), # horizontal rule line
 
@@ -179,8 +185,8 @@ tagList( #needed for shinyjs
                                            #icon = icon("arrow-circle-right", "icon-lp")#,
                                            #onclick ="window.open('https://rsteenson.github.io/webtest/', '_blank')"
                               ))
-                          ) # row END bracket
-                   ), # column END bracket
+                        ) # row END bracket
+                 ), # column END bracket
                  column(4,
                         fluidRow(
                           h2("Indonesia", style="text-align:center; margin-top:0px;", class="text-primary"),
@@ -196,7 +202,7 @@ tagList( #needed for shinyjs
                                            #icon = icon("arrow-circle-right", "icon-lp")
                                            #onclick ="window.open('https://rsteenson.github.io/webtest/', '_blank')"
                               ))
-                          ) # row END bracket
+                        ) # row END bracket
                  ), # column END bracket
                  column(4,
                         fluidRow(
@@ -213,10 +219,10 @@ tagList( #needed for shinyjs
                                            #icon = icon("arrow-circle-right", "icon-lp")
                                            #onclick ="window.open('https://rsteenson.github.io/webtest/', '_blank')"
                               ))
-                          ) # row END bracket
-                          ) # column END bracket
-                   ) # main panel END bracket
-                 ),
+                        ) # row END bracket
+                 ) # column END bracket
+               ) # main panel END bracket
+             ),
 
              #------------------------------------------------------------------
              # Create About tab panel
@@ -236,9 +242,9 @@ tagList( #needed for shinyjs
                           div(class="landing-page-footer-box",
                               div(class = "landing-page-footer-icon", style="background-image: url(logos/Funders&Partners_banner.png);
                                   background-size: auto 100%; background-position: center; background-repeat: no-repeat; ")))
-                              ) # row END bracket
-                 ) # main panel END bracket
-               ), # tab panel END bracket
+                 ) # row END bracket
+               ) # main panel END bracket
+             ), # tab panel END bracket
 
              #------------------------------------------------------------------
              # Create Contact tab panel
@@ -259,14 +265,14 @@ tagList( #needed for shinyjs
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/no_pic.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                                ), # column END bracket
+                                     ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Dr. Katie Hampson ")),
                                                    h5(HTML("<em></em>")),
                                                    h5(""))
                                      ), # column END bracket
                                      column(3)
-                                     ), # row END bracket
+                                   ), # row END bracket
                                    #---------------#
                                    # Kirstyn Brunker
                                    fluidRow(
@@ -274,7 +280,7 @@ tagList( #needed for shinyjs
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/kirstyn_b2.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                                ), # column END bracket
+                                     ), # column END bracket
                                      column(4,
                                             div(class="team-page-text",
                                                 h4(tags$b("Dr. Kirstyn Brunker"), HTML("&emsp;"),
@@ -293,14 +299,14 @@ tagList( #needed for shinyjs
                                                    lab-in-a-suitcase approach, using Oxford Nanopore’s MinION sequencer, to build
                                                    capacity for Rabies genomic surveillance in low-resource settings. This has been
                                                    successfully tested in the field in Tanzania."))
-                                                ), # column END bracket
+                                     ), # column END bracket
                                      #---------------#
                                      # Elaine Ferguson
                                      column(2, class="landing-page-column",
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/elaine_f.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                                ), # column END bracket
+                                     ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Dr. Elaine Ferguson "), HTML("&emsp;"),
                                                       tags$a(href = "https://twitter.com/ElaineAFerguson",  icon("twitter"),
@@ -313,8 +319,8 @@ tagList( #needed for shinyjs
                                                       eliminate rabies."),
                                                    h5("Through these analyses, Elaine also aims to determine the roles of dog movements and
                                                       the density and distribution of dog populations in maintaining rabies transmission."))
-                                                   ) # column END bracket
-                                                   ), # row END bracket
+                                     ) # column END bracket
+                                   ), # row END bracket
                                    fluidRow(
                                      #-------------#
                                      # Anna Czupryna
@@ -322,7 +328,7 @@ tagList( #needed for shinyjs
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/no_pic.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                                ), # column END bracket
+                                     ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Anna Czupryna ")),
                                                    h5(HTML("<em>Post-doc</em>")))
@@ -333,7 +339,7 @@ tagList( #needed for shinyjs
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/rachel_s.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                                ), # column END bracket
+                                     ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Rachel Steenson "), HTML("&emsp;"),
                                                       tags$a(href = "https://twitter.com/RachelSSteenson",  icon("twitter"),
@@ -345,8 +351,8 @@ tagList( #needed for shinyjs
                                                       the websites available through this Hub."),
                                                    h5("I’m also responsible for fixing issues in our contact tracing data and
                                                       updating spatial files to match the continually changing semi-rural areas in Tanzania."))
-                                                   ) # column END bracket
-                                     ), # row END bracket
+                                     ) # column END bracket
+                                   ), # row END bracket
                                    #---------------#
                                    # Laurie Baker
                                    fluidRow(
@@ -354,7 +360,7 @@ tagList( #needed for shinyjs
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/laurie_b.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                                ), # column END bracket
+                                     ), # column END bracket
                                      column(4,
                                             div(class="team-page-text",
                                                 h4(tags$b("Dr. Laurie Baker"), HTML("&emsp;"),
@@ -369,13 +375,13 @@ tagList( #needed for shinyjs
                                                 h5("She is working with several collaborators on this project: Thomas Müller and Conrad Freuling at the
                                                    Friedrich-Loeffler Institute in Germany, Elias Krainski at the Universidade Federal do Paraná,
                                                    and Håvard Rue at King Abdullah University of Science and Technology (KAUST)."))
-                                                ) # column END bracket
-                                                ), # row END bracket
+                                     ) # column END bracket
+                                   ), # row END bracket
                                    fluidRow(
                                      br(), br()
                                    ) # row END bracket
-                                                ) # main panel END bracket
-                                     ), # tab panel END bracket
+                                 ) # main panel END bracket
+                        ), # tab panel END bracket
                         #-------------------------------------------------------
                         # Tanzania Team section
                         tabPanel(title = "Tanzania Team",
@@ -391,7 +397,7 @@ tagList( #needed for shinyjs
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/matiko_t.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                                ), # column END bracket
+                                     ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Matiko Tiringa ")),
                                                    h5(HTML("<em>Field Officer</em>")))
@@ -402,12 +408,12 @@ tagList( #needed for shinyjs
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/no_pic.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                                ), # column END bracket
+                                     ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Rena Herman ")),
                                                    h5(HTML("<em>Driver</em>")))
                                      ) # column END bracket
-                                     ), # row END bracket
+                                   ), # row END bracket
                                    fluidRow(
                                      #---------------#
                                      # Kennedy Lushasi
@@ -415,7 +421,7 @@ tagList( #needed for shinyjs
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/kennedy_l.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                                ), # column END bracket
+                                     ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Kennedy Lushasi ")),
                                                    h5(HTML("<em>AO-ASPIRE PhD Student</em>")),
@@ -430,14 +436,14 @@ tagList( #needed for shinyjs
                                                    h5("Kennedy works very closely with government health and veterinary workers
                                                       that coordinate field operations, district medical and veterinary officers, livestock
                                                       field officers, public health workers, and the wider community."))
-                                                   ), # column END bracket
+                                     ), # column END bracket
                                      #---------------#
                                      # Ahmed Lugelo
                                      column(2, class="landing-page-column",
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/ahmed_l.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                                ), # column END bracket
+                                     ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Ahmed Lugelo ")),
                                                    h5(HTML("<em>AO-ASPIRE PhD Student</em>")),
@@ -452,8 +458,8 @@ tagList( #needed for shinyjs
                                                    h5("I work closely with local communities, government animal health professionals (MoLFD), as
                                                       well as multiple research institutes including Sokoine University of Agriculture, Ifakara
                                                       Health Institute, University of Glasgow and Washington State University."))
-                                                   ) # column END bracket
-                                                   ), # row END bracket
+                                     ) # column END bracket
+                                   ), # row END bracket
                                    fluidRow(
                                      br()
                                    ), # row END bracket
@@ -464,7 +470,7 @@ tagList( #needed for shinyjs
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/no_pic.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                                ), # column END bracket
+                                     ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Christian Tetteh ")),
                                                    h5(HTML("<em>PhD Student</em>")))
@@ -475,7 +481,7 @@ tagList( #needed for shinyjs
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/joel_c.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                                ), # column END bracket
+                                     ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Joel Changalucha")),
                                                    h5(HTML("<em>Research Scientist</em>")),
@@ -490,8 +496,8 @@ tagList( #needed for shinyjs
                                                    h5("Joel brings to his position a well-established background in health system and clinical practice
                                                       of rural settings; this has helped in sustaining the requirements of the mobile phone surveillance
                                                       system in Tanzania."))
-                                                   ) # column END bracket
-                                                   ), # row END bracket
+                                     ) # column END bracket
+                                   ), # row END bracket
                                    fluidRow(
                                      #---------------#
                                      # Maganga Sambo
@@ -499,7 +505,7 @@ tagList( #needed for shinyjs
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/maganga_s.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                                ), # column END bracket
+                                     ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Maganga Sambo ")),
                                                    h5(HTML("<em>PhD Student</em>")),
@@ -512,7 +518,7 @@ tagList( #needed for shinyjs
                                                       He compared these survey methods to see which methods provide precise estimates of vaccination
                                                       coverage and dog population sizes. This work guides the ongoing and future dog vaccinations on a
                                                       large scale in sub-Saharan Africa"))
-                                                   ), # column END bracket
+                                     ), # column END bracket
                                      #---------------#
                                      # Zilpah Kaare
                                      column(2, class="landing-page-column",
@@ -526,14 +532,14 @@ tagList( #needed for shinyjs
                                                    h5("Zilpah collects and collates hospital records within the study areas involved in the project.
                                                      She also enters and uploads data into the project database."))
                                      ) # column END bracket
-                                                   ), # row END bracket
+                                   ), # row END bracket
                                    fluidRow(
                                      br(), br()
                                    ) # row END bracket
-                                                   ) # main panel END bracket
-                                   )# tab panel END bracket
-                                   ) # navbar menu END bracket
-                                     ), # navbar page END bracket
+                                 ) # main panel END bracket
+                        )# tab panel END bracket
+             ) # navbar menu END bracket
+  ), # navbar page END bracket
 
   #-----------------------------------------------------------------------------
   # Add footer
@@ -546,4 +552,4 @@ tagList( #needed for shinyjs
               column(3, "Last updated: ", sys_date, style="font-style: italic; text-align: right;  padding: 5px;"),
               class="bg-primary",
               style = "position: fixed;  left: 0; bottom: 0; vertical-align: middle; width: 100%; z-index: 1000; height: 30px; color: white;")
-               ) # taglist END bracket
+) # taglist END bracket
