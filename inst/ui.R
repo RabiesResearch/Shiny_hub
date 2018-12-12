@@ -37,7 +37,7 @@ tagList( #needed for shinyjs
                    border: 0px; position: absolute; object-fit: scale-down;}",
                    #landing-page titles for boxes
                    ".landing-page-box-title {font-size: 16px; text-align:center; color: black;
-                   font-weight: bold; background-color: none; width:100%; max-height: 20px; margin-top: 10px}",
+                   font-weight: bold; background-color: none; width:100%; max-height: 20px; margin-bottom: 0}",
                    #landing page buttons
                    ".landing-page-button {text-align:center;
                    background-image:none; color: black; white-space: normal; border-radius: 0;border: 0px;
@@ -113,11 +113,11 @@ tagList( #needed for shinyjs
                  ), # row END bracket
                  fluidRow(
                    # Link to Mara website
-                   column(3, class="landing-page-column",
+                   column(4, class="landing-page-column",
                           div(class="landing-page-box",
                               div("Mara Region", class = "landing-page-box-title"),
                               div(class = "landing-page-icon", style="background-image: url(maps/mara_map.png);
-                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
+                                  background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br>
                                                           <em>Implementation research on vaccination and surveillance approaches</em>"),
                                            class="landing-page-button"
@@ -142,11 +142,11 @@ tagList( #needed for shinyjs
                                            icon = icon("arrow-circle-right", class="text-primary"),
                                            onclick ="window.open('https://rabiesresearch.github.io/Ngorongoro/', '_blank')"))),
                    # Link to STz & Pemba website
-                   column(3, class="landing-page-column",
+                   column(4, class="landing-page-column",
                           div(class="landing-page-box",
                               div("S. Tanzania and Pemba Island", class = "landing-page-box-title"),
                               div(class = "landing-page-icon", style="background-image: url(maps/stz_map.png);
-                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
+                                  background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br> S. Tanzania"),
                                                class="landing-page-button-stacked-1"
                                            #icon = icon("arrow-circle-right", "icon-lp")
@@ -159,7 +159,7 @@ tagList( #needed for shinyjs
                               ))
                    ) # column END bracket
                  ), # row END bracket
-                 br(), br(), # line breaks
+                 br(), # line breaks
                  hr(), # horizontal rule line
 
                  #--------------------------------------------------------------
@@ -173,7 +173,7 @@ tagList( #needed for shinyjs
                           div(class="landing-page-box",
                               div("Romblon & Oriental Mindoro", class = "landing-page-box-title"),
                               div(class = "landing-page-icon", style="background-image: url(maps/phil_study_map.png);
-                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
+                                  background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br>"),
                                            class="landing-page-button"
                                            #icon = icon("arrow-circle-right", "icon-lp")#,
@@ -190,7 +190,7 @@ tagList( #needed for shinyjs
                           div(class="landing-page-box",
                               div("", class = "landing-page-box-title"),
                               div(class = "landing-page-icon", style="background-image: url(maps/indon_study_map.png);
-                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
+                                  background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br>"),
                                            class="landing-page-button"
                                            #icon = icon("arrow-circle-right", "icon-lp")
@@ -207,7 +207,7 @@ tagList( #needed for shinyjs
                           div(class="landing-page-box",
                               div("", class = "landing-page-box-title"),
                               div(class = "landing-page-icon", style="background-image: url(maps/latin_america_study_map.png);
-                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
+                                  background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>App being prepared</p> <br>"),
                                            class="landing-page-button"
                                            #icon = icon("arrow-circle-right", "icon-lp")
