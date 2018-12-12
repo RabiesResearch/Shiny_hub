@@ -150,7 +150,7 @@ tagList( #needed for shinyjs
                    # Link to STz & Pemba website
                    column(3, class="landing-page-column",
                           div(class="landing-page-box",
-                              div("S. Tanzania and Pemba", class = "landing-page-box-title"),
+                              div("S. Tanzania and Pemba Island", class = "landing-page-box-title"),
                               div(class = "landing-page-icon", style="background-image: url(maps/stz_map.png);
                                   background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br> S. Tanzania"),
