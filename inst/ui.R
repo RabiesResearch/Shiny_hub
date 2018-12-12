@@ -112,6 +112,7 @@ tagList( #needed for shinyjs
                              style="text-align:center; margin-top:0px; ")
                  ), # row END bracket
                  fluidRow(
+                   br(),
                    # Link to Mara website
                    column(4, class="landing-page-column",
                           div(class="landing-page-box",
