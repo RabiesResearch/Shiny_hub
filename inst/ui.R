@@ -307,7 +307,7 @@ tagList( #needed for shinyjs
                                      # Elaine Ferguson
                                      column(2, class="landing-page-column",
                                             div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/elaine_f.jpg);
+                                                div(class = "team-page-icon", style="background-image: url(team/elaine_f2.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
                                      ), # column END bracket
                                      column(4, div(class="team-page-text",
