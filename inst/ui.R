@@ -124,28 +124,22 @@ tagList( #needed for shinyjs
                                            #icon = icon("arrow-circle-right", "icon-lp")
                                            #onclick ="window.open('https://rsteenson.github.io/webtest/', '_blank')"
                               ))),
-                   # Link to Serengeti website
-                   column(3, class="landing-page-column",
+                   # Link to Serengeti and Ngorongoro websites
+                   column(4, class="landing-page-column",
                           div(class="landing-page-box",
-                              div("Serengeti District", class = "landing-page-box-title"),
-                              div(class = "landing-page-icon", style="background-image: url(maps/ser_map.png);
+                              div("Serengeti & Ngorongoro Districts", class = "landing-page-box-title"),
+                              div(class = "landing-page-icon", style="background-image: url(maps/ser_ngor_map.png);
                                   background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('',
-                                           label=HTML("Go to Serengeti Website <br><br>
-                                                      <em>Long-term contact tracing</em>"),
-                                           class="landing-page-button",
-                                           icon = icon("arrow-circle-right", "icon-lp"),
-                                           onclick ="window.open('https://rabiesresearch.github.io/Serengeti/', '_blank')"))),
-                   # Link to Ngorongoro website
-                   column(3, class="landing-page-column",
-                          div(class="landing-page-box",
-                              div("Ngorongoro District", class = "landing-page-box-title"),
-                              div(class = "landing-page-icon", style="background-image: url(maps/ngor_map.png);
-                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
-                              actionButton('', label=HTML("Go to Ngorongoro Website <br><br>
+                                           label=HTML("<font class='text-primary'>Go to Serengeti Website</font> <br><br>
+                                                      <em>Long-term contact tracing & <br> Dog vaccination</em>"),
+                                           class="landing-page-button-stacked-1",
+                                           icon = icon("arrow-circle-right", class="text-primary"),
+                                           onclick ="window.open('https://rabiesresearch.github.io/Serengeti/', '_blank')"),
+                              actionButton('', label=HTML("<font class='text-primary'>Go to Ngorongoro Website</font> <br><br>
                                                           <em>Long-term contact tracing</em>"),
-                                           class="landing-page-button",
-                                           icon = icon("arrow-circle-right", "icon-lp"),
+                                           class="landing-page-button-stacked-2",
+                                           icon = icon("arrow-circle-right", class="text-primary"),
                                            onclick ="window.open('https://rabiesresearch.github.io/Ngorongoro/', '_blank')"))),
                    # Link to STz & Pemba website
                    column(3, class="landing-page-column",
