@@ -44,10 +44,10 @@ tagList( #needed for shinyjs
                    font-size: 16px; min-height: 100%; position: absolute; margin-bottom: 0px; margin-top: 5px; float: middle; width: 100%; opacity: 0;}",
                    ".landing-page-button-stacked-1 {text-align:center; position: absolute;
                    background-image:none; color: black; white-space: normal; border-radius: 0;border: 0px;
-                   font-size: 16px; height: 40%; bottom: 40%; width: 100%; opacity: 0;}",
+                   font-size: 16px; height: 50%; bottom: 40%; width: 100%; opacity: 0;}",
                    ".landing-page-button-stacked-2 {text-align:center; position: absolute;
                    background-image:none; color: black; white-space: normal; border-radius: 0;border: 0px;
-                   font-size: 16px; height: 40%; bottom: 0px; width: 100%; opacity: 0;}",
+                   font-size: 16px; height: 50%; bottom: 0px; width: 100%; opacity: 0;}",
                    #hover effect on landing page buttons
                    ".landing-page-button:hover , .landing-page-button:active , .landing-page-button-stacked-1:hover ,
                    .landing-page-button-stacked-1:active , .landing-page-button-stacked-2:hover ,
