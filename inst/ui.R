@@ -129,7 +129,7 @@ tagList( #needed for shinyjs
                           div(class="landing-page-box",
                               div("Serengeti & Ngorongoro Districts", class = "landing-page-box-title"),
                               div(class = "landing-page-icon", style="background-image: url(maps/ser_ngor_map.png);
-                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
+                                  background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('',
                                            label=HTML("<font class='text-primary'>Go to Serengeti Website</font> <br><br>
                                                       <em>Long-term contact tracing & <br> Dog vaccination</em>"),
