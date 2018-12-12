@@ -177,7 +177,7 @@ tagList( #needed for shinyjs
                           # Link to Philippines website
                           class="landing-page-column",
                           div(class="landing-page-box",
-                              div("Romblon & Mindoro Provinces", class = "landing-page-box-title"),
+                              div("Romblon & Oriental Mindoro", class = "landing-page-box-title"),
                               div(class = "landing-page-icon", style="background-image: url(maps/phil_study_map.png);
                                   background-size: auto 80%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br>"),
@@ -273,9 +273,12 @@ tagList( #needed for shinyjs
                                      ), # column END bracket
                                      column(3)
                                    ), # row END bracket
+                                   fluidRow(
+                                     br()
+                                   ), # row END bracket
+                                   fluidRow(
                                    #---------------#
                                    # Kirstyn Brunker
-                                   fluidRow(
                                      column(2, class="landing-page-column",
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/kirstyn_b2.jpg);
@@ -322,16 +325,29 @@ tagList( #needed for shinyjs
                                      ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
+                                     br()
+                                   ), # row END bracket
+                                   fluidRow(
                                      #-------------#
                                      # Anna Czupryna
                                      column(2, class="landing-page-column",
                                             div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/no_pic.jpg);
+                                                div(class = "team-page-icon", style="background-image: url(team/anna_c2.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
                                      ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Anna Czupryna ")),
-                                                   h5(HTML("<em>Post-doc</em>")))
+                                                   h5(HTML("<em>Postdoctoral Research Assistant </em>")),
+                                                   h5("Anna Czupryna is a Postdoctoral researcher based at the University of Glasgow, working
+                                                      in Tanzania coordinating field research activities for the Rabies Elimination Project. "),
+                                                   h5("She received her Ph.D. from the University of Illinois at Chicago studying domestic dog
+                                                      population dynamics in villages near Serengeti National Park in Tanzania. Her dissertation
+                                                      research, 'The Ecology of Free-Roaming Domestic Dogs in Rural Villages near Serengeti National
+                                                      Park,' involved an innovative multidisciplinary approach that integrated demography,
+                                                      endocrinology and public health. "),
+                                                   h5("Anna is currently working with the field team in Mugumu, near Serengeti National Park, on
+                                                      streamlining data collection, developing training programs for village rabies coordinators,
+                                                      and coordinating data collection, dog vaccination, and research protocols. "))
                                      ), # column END bracket
                                      #---------------#
                                      # Rachel Steenson
@@ -353,9 +369,12 @@ tagList( #needed for shinyjs
                                                       updating spatial files to match the continually changing semi-rural areas in Tanzania."))
                                      ) # column END bracket
                                    ), # row END bracket
+                                   fluidRow(
+                                     br()
+                                   ), # row END bracket
+                                   fluidRow(
                                    #---------------#
                                    # Laurie Baker
-                                   fluidRow(
                                      column(2, class="landing-page-column",
                                             div(class="team-page-icon-box",
                                                 div(class = "team-page-icon", style="background-image: url(team/laurie_b.jpg);
@@ -400,7 +419,15 @@ tagList( #needed for shinyjs
                                      ), # column END bracket
                                      column(4, div(class="team-page-text",
                                                    h4(tags$b("Matiko Tiringa ")),
-                                                   h5(HTML("<em>Field Officer</em>")))
+                                                   h5(HTML("<em>Project Field Officer</em>")),
+                                                   h5("Matiko carries out contact tracing in Serengeti and Ngorongoro districts. Individuals
+                                                      bitten by an animal are located and interviewed to collect detailed data on a bite incident,
+                                                      and decide if it was a probable Rabies exposure. He follows the chain of interactions to
+                                                      other human and animal bite victims to identify how the infection began, collecting data
+                                                      at every step and educating communities about Rabies. "),
+                                                   h5("Matiko also collects tissue samples from recently deceased probable Rabid animals, and
+                                                      completes a Rapid Diagnostic Test to gain a preliminary result on Rabies status. These
+                                                      samples are then sent to the laboratory for confirmation and sequencing."))
                                      ), # column END bracket
                                      #---------------#
                                      # Rena Herman
@@ -414,6 +441,9 @@ tagList( #needed for shinyjs
                                                    h5(HTML("<em>Driver</em>")))
                                      ) # column END bracket
                                    ), # row END bracket
+                                   fluidRow(
+                                     br()
+                                     ), # row END bracket
                                    fluidRow(
                                      #---------------#
                                      # Kennedy Lushasi
@@ -497,6 +527,9 @@ tagList( #needed for shinyjs
                                                       of rural settings; this has helped in sustaining the requirements of the mobile phone surveillance
                                                       system in Tanzania."))
                                      ) # column END bracket
+                                   ), # row END bracket
+                                   fluidRow(
+                                     br()
                                    ), # row END bracket
                                    fluidRow(
                                      #---------------#
