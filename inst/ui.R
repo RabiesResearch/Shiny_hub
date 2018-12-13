@@ -577,7 +577,7 @@ tagList( #needed for shinyjs
                      HTML("&emsp;"),
                      tags$a(href = "https://twitter.com/rabidbites",  icon("twitter"), target="_blank", style = "color: white;")),
               column(6, "Rabies Research Hub", style= "font-size: 20px; text-align: center; padding-bottom: 5px;"),
-              column(3, "Last updated: ", sys_date, style="font-style: italic; text-align: right;  padding: 5px;"),
+              column(3),
               class="bg-primary",
               style = "position: fixed;  left: 0; bottom: 0; vertical-align: middle; width: 100%; z-index: 1000; height: 30px; color: white;")
 ) # taglist END bracket
