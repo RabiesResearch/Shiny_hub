@@ -425,17 +425,19 @@ tagList( #needed for shinyjs
                                                       samples are then sent to the laboratory for confirmation and sequencing."))
                                      ), # column END bracket
                                      #---------------#
-                                     # Rena Herman
+                                     # Zilpah Kaare
                                      column(2, class="landing-page-column",
                                             div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/no_pic.jpg);
+                                                div(class = "team-page-icon", style="background-image: url(team/ziplah_k.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
+                                                ), # column END bracket
                                      column(4, div(class="team-page-text",
-                                                   h4(tags$b("Rena Herman ")),
-                                                   h5(HTML("<em>Driver</em>")))
-                                     ) # column END bracket
-                                   ), # row END bracket
+                                                   h4(tags$b("Zilpah Kaare")),
+                                                   h5(HTML("<em>Data Collector</em>")),
+                                                   h5("Zilpah collects and collates hospital records within the study areas involved in the project.
+                                                      She also enters and uploads data into the project database."))
+                                                   ) # column END bracket
+                                     ), # row END bracket
                                    fluidRow(
                                      br()
                                      ), # row END bracket
@@ -490,15 +492,24 @@ tagList( #needed for shinyjs
                                    ), # row END bracket
                                    fluidRow(
                                      #---------------#
-                                     # Christian Tetteh
+                                     # Maganga Sambo
                                      column(2, class="landing-page-column",
                                             div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/no_pic.jpg);
+                                                div(class = "team-page-icon", style="background-image: url(team/maganga_s.jpg);
                                                     background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
                                      ), # column END bracket
                                      column(4, div(class="team-page-text",
-                                                   h4(tags$b("Christian Tetteh ")),
-                                                   h5(HTML("<em>PhD Student</em>")))
+                                                   h4(tags$b("Maganga Sambo ")),
+                                                   h5(HTML("<em>PhD Student</em>")),
+                                                   h5("Mass vaccination is known to be the cornerstone for effective control of canine rabies; however,
+                                                      there is little scientific guidance for the best way of evaluating and monitoring the success of the
+                                                      implementations of dog vaccination campaigns."),
+                                                   h5("Maganga's PhD focuses on measuring, monitoring and improving mass dog vaccination programmes to
+                                                      inform control and eliminate rabies."),
+                                                   h5("Maganga conducted post-vaccination evaluations: households, school-based and transect surveys.
+                                                      He compared these survey methods to see which methods provide precise estimates of vaccination
+                                                      coverage and dog population sizes. This work guides the ongoing and future dog vaccinations on a
+                                                      large scale in sub-Saharan Africa"))
                                      ), # column END bracket
                                      #---------------#
                                      # Joel Changalucha
@@ -525,41 +536,6 @@ tagList( #needed for shinyjs
                                    ), # row END bracket
                                    fluidRow(
                                      br()
-                                   ), # row END bracket
-                                   fluidRow(
-                                     #---------------#
-                                     # Maganga Sambo
-                                     column(2, class="landing-page-column",
-                                            div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/maganga_s.jpg);
-                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
-                                     column(4, div(class="team-page-text",
-                                                   h4(tags$b("Maganga Sambo ")),
-                                                   h5(HTML("<em>PhD Student</em>")),
-                                                   h5("Mass vaccination is known to be the cornerstone for effective control of canine rabies; however,
-                                                      there is little scientific guidance for the best way of evaluating and monitoring the success of the
-                                                      implementations of dog vaccination campaigns."),
-                                                   h5("Maganga's PhD focuses on measuring, monitoring and improving mass dog vaccination programmes to
-                                                      inform control and eliminate rabies."),
-                                                   h5("Maganga conducted post-vaccination evaluations: households, school-based and transect surveys.
-                                                      He compared these survey methods to see which methods provide precise estimates of vaccination
-                                                      coverage and dog population sizes. This work guides the ongoing and future dog vaccinations on a
-                                                      large scale in sub-Saharan Africa"))
-                                     ), # column END bracket
-                                     #---------------#
-                                     # Zilpah Kaare
-                                     column(2, class="landing-page-column",
-                                            div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/ziplah_k.jpg);
-                                                  background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
-                                     column(4, div(class="team-page-text",
-                                                   h4(tags$b("Zilpah Kaare")),
-                                                   h5(HTML("<em>Data Collector</em>")),
-                                                   h5("Zilpah collects and collates hospital records within the study areas involved in the project.
-                                                     She also enters and uploads data into the project database."))
-                                     ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
                                      br(), br()
