@@ -538,6 +538,31 @@ tagList( #needed for shinyjs
                                      br()
                                    ), # row END bracket
                                    fluidRow(
+                                     #---------------#
+                                     # Lwitiko Sikana
+                                     column(2, class="landing-page-column",
+                                            div(class="team-page-icon-box",
+                                                div(class = "team-page-icon", style="background-image: url(team/sikana_l.jpg);
+                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
+                                                ), # column END bracket
+                                     column(4, div(class="team-page-text",
+                                                   h4(tags$b("Lwitiko Sikana ")),
+                                                   h5(HTML("<em>MSc Student</em>")),
+                                                   h5("Lwitiko has been working on implementing rabies research in Tanzania for almost ten years, such
+                                                      as vaccination campaigns and conducting community engagement projects."),
+                                                   h5("Currently, he is an MSc in Public Health Research candidate at the Nelson Mandela African
+                                                      Institution of Science and Technology in Tanzania) through the Afrique One- African Science
+                                                      Partnership for Intervention Research Excellence (ASPIRE) fellowship."),
+                                                   h5("He is interested in understanding family and community dynamics in the prevention of rabies,
+                                                      which could help in developing an intervention that could be feasible for raising awareness through
+                                                      the use of social practices."))
+                                                   ), # column END bracket
+                                     column(6)
+                                   ), # row END bracket
+                                   fluidRow(
+                                     br(), br()
+                                   ), # row END bracket
+                                   fluidRow(
                                      br(), br()
                                    ) # row END bracket
                                  ) # main panel END bracket
