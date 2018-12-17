@@ -556,8 +556,26 @@ tagList( #needed for shinyjs
                                                    h5("He is interested in understanding family and community dynamics in the prevention of rabies,
                                                       which could help in developing an intervention that could be feasible for raising awareness through
                                                       the use of social practices."))
-                                                   ), # column END bracket
-                                     column(6)
+                                     ), # column END bracket
+                                     #---------------#
+                                     # Christian Tetteh Duamor
+                                     column(2, class="landing-page-column",
+                                            div(class="team-page-icon-box",
+                                                div(class = "team-page-icon", style="background-image: url(team/no_pic.jpg);
+                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
+                                     ), # column END bracket
+                                     column(4, div(class="team-page-text",
+                                                   h4(tags$b("Christian Tetteh Duamor")),
+                                                   h5(HTML("<em>AO-ASPIRE PhD Student</em>")),
+                                                   h5("Christian’s PhD focuses on building expertise in Community-Led models for delivering and evaluating
+                                                      health interventions. He is currently conducting process evaluation on on-going trials in Mara Region
+                                                      of Tanzania, to determine effective methods of delivering community-based mass dog vaccination
+                                                      campaigns against Rabies. "),
+                                                   h5("Christian holds an MSc in Epidemiology and Control of Infectious Diseases (University of Buea, 2015),
+                                                      BSc Biological Sciences (Kwame Nkrumah University of Science and Technology, 2010); he also acquired
+                                                      Certificate in Management in Health (World Bank Group MOOC, 2015), Certificate Implementation Research
+                                                      (TDR MOOC, 2018) and completed the REC, AVC and CCC from GARC."))
+                                     ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
                                      br(), br()
