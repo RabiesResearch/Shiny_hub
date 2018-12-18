@@ -237,18 +237,37 @@ tagList( #needed for shinyjs
                  fluidRow(
                    h4("We are a collective of researchers working on rabies.
                       This hub and associated websites/apps are a way of providing information on the work that we do.",
-                      br(),"Our work is generously supported by a range of organizations.",
-                      style="text-align:center; margin-top:0px;")
+                      br(),"Our work is generously supported by a range of organizations:",
+                      style="text-align:center; margin-top:0px;"),
+                   hr()
                  ), # row END bracket
                  fluidRow(
-                   column(12, class="landing-page-column",
+                   column(2, h3("Tanzania", class="text-primary", style="width: 100%; height: 30vh; display: table-cell;
+                                vertical-align: middle; margin: auto 0;")
+                   ), # column END bracket
+                   column(10, class="landing-page-column",
                           br(),
                           div(class="landing-page-footer-box",
-                              div(class = "landing-page-footer-icon", style="background-image: url(logos/Funders&Partners_banner.png);
-                                  background-size: auto 100%; background-position: center; background-repeat: no-repeat; ")))
-                 ) # row END bracket
-               ) # main panel END bracket
-             ), # tab panel END bracket
+                              div(class = "landing-page-footer-icon", style="background-image: url(logos/tz_banner.png);
+                                  background-size: auto 100%; background-position: center; background-repeat: no-repeat; "))
+                              ) # column END bracket
+                 ), # row END bracket
+                 fluidRow(
+                   br(), br()
+                 ), # row END bracket
+                 fluidRow(
+                   column(2,
+                          h3("Philippines", class="text-primary", style="width: 100%; height: 30vh; display: table-cell;
+                     vertical-align: middle; margin: auto 0;")
+                   ), # column END bracket
+                   column(10, class="landing-page-column",
+                          div(class="landing-page-footer-box",
+div(class = "landing-page-footer-icon", style="background-image: url(logos/phil_banner.png);
+                                  background-size: auto 60%; background-position: center; background-repeat: no-repeat; "))
+                 ) # column END bracket
+               ) # row END bracket
+             ) # main panel END bracket
+  ), # tab panel END bracket
 
              #------------------------------------------------------------------
              # Create Contact tab panel
@@ -308,7 +327,7 @@ tagList( #needed for shinyjs
                                                    h4("Dr. Elaine Ferguson", style="font-weight: bold;", HTML("&emsp;"),
                                                       tags$a(href = "https://twitter.com/ElaineAFerguson",  icon("twitter"),
                                                              target="_blank", class="text-primary")),
-                                                   h5("Data Collector", style="font-style: italic;"),
+                                                   h5("Postdoctoral Research Assistant", style="font-style: italic;"),
                                                    div(style="display: inline-block;",
                                                        img(src="team/elaine_f2.jpg", class="team-page-img"),
                                                        div(class="team-page-txt",
@@ -373,7 +392,7 @@ tagList( #needed for shinyjs
                                             h4("Dr. Laurie Baker", style="font-weight: bold;", HTML("&emsp;"),
                                                tags$a(href = "https://twitter.com/llbaker1707",  icon("twitter"),
                                                       target="_blank", class="text-primary")),
-                                            h5("Data Collector", style="font-style: italic;"),
+                                            h5("Transition Fellow", style="font-style: italic;"),
                                             div(style="display: inline-block;",
                                                 img(src="team/laurie_b.jpg", class="team-page-img"),
                                                 div(class="team-page-txt",
@@ -385,7 +404,22 @@ tagList( #needed for shinyjs
                                                     h5("She is working with several collaborators on this project: Thomas Müller and Conrad Freuling at the
                                                    Friedrich-Loeffler Institute in Germany, Elias Krainski at the Universidade Federal do Paraná,
                                                    and Håvard Rue at King Abdullah University of Science and Technology (KAUST).")))
-                                     ) # column END bracket
+                                     ), # column END bracket
+                                     #---------------#
+                                       # Putthi Cheat Lim
+                                       column(6, class="landing-page-column",
+                                              h4("Putthi Cheat Lim", style="font-weight: bold;"),
+                                              h5("PhD Student", style="font-style: italic;"),
+                                              div(style="display: inline-block;",
+                                                  img(src="team/putthi_l.jpg", class="team-page-img"),
+                                                  div(class="team-page-txt",
+                                                      h5("I am a PhD student in Economics based in the Adam Smith Business School, University of Glasgow.
+                                                         My research uses economic perspectives to try to understand community members’ decisions to
+                                                         participate in vaccination campaigns and to design policies that aim to increase participation in
+                                                         canine rabies vaccination campaigns.  "),
+                                                      h5("My current research looks at the use of mobile phone text messaging and religious and tribal leaders
+                                                         in raising awareness of rabies and to encourage participation in communities in rural Tanzania. ")))
+                                       ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
                                      br(), br()
