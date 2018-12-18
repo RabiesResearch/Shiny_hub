@@ -71,10 +71,12 @@ tagList( #needed for shinyjs
                    #landing-page icons
                    ".icon-lp{font-size: 1.3em; padding-right: 4px;}",
                    #landing page footer items
-                   ".landing-page-footer-icon {width:100%; height:100%; min-height:100%; background-color: white;
-                   border: 0px ; position: absolute; object-fit: contain;}",
-                   ".landing-page-footer-box {width:100%; height:100%; min-height:30vh; background-color:white;
-                   border: 0px; margin-bottom: 5px; float: left; transition: 0.5s ease; position: relative; object-fit: contain;}",
+                   "@media screen and (max-width: 400px) {
+                      .about-page-logo {max-width: 800px; width: 100%; margin-left: auto; margin-right: auto; display: block; }
+                      .about-page-txt {width: 100%; vertical-align: middle; }}",
+                   "@media screen and (min-width: 401px){
+                      .about-page-logo {max-width: 800px; width: 80%; margin-left: auto; margin-right: auto; display: block; }
+                      .about-page-txt {width: 100%; vertical-align: middle; }}",
                    # image alignments for "meet the team"
                    ".team-page-icon-box {width:100%; height:100%; min-height: 45vh; background-color:white;
                    border: 0px; margin-bottom: 2px; float: left; position: relative; object-fit: scale-down;}",
@@ -242,29 +244,15 @@ tagList( #needed for shinyjs
                    hr()
                  ), # row END bracket
                  fluidRow(
-                   column(2, h3("Tanzania", class="text-primary", style="width: 100%; height: 30vh; display: table-cell;
-                                vertical-align: middle; margin: auto 0;")
-                   ), # column END bracket
-                   column(10, class="landing-page-column",
-                          br(),
-                          div(class="landing-page-footer-box",
-                              div(class = "landing-page-footer-icon", style="background-image: url(logos/tz_banner.png);
-                                  background-size: auto 100%; background-position: center; background-repeat: no-repeat; "))
-                              ) # column END bracket
+                   h3("Tanzania", class="about-page-txt"),
+                   img(src="logos/tz_banner.png", class="about-page-logo")
                  ), # row END bracket
                  fluidRow(
                    br(), br()
                  ), # row END bracket
                  fluidRow(
-                   column(2,
-                          h3("Philippines", class="text-primary", style="width: 100%; height: 30vh; display: table-cell;
-                     vertical-align: middle; margin: auto 0;")
-                   ), # column END bracket
-                   column(10, class="landing-page-column",
-                          div(class="landing-page-footer-box",
-div(class = "landing-page-footer-icon", style="background-image: url(logos/phil_banner.png);
-                                  background-size: auto 60%; background-position: center; background-repeat: no-repeat; "))
-                 ) # column END bracket
+                   h3("Philippines", class="about-page-txt"),
+                   img(src="logos/phil_banner.png", class="about-page-logo")
                ) # row END bracket
              ) # main panel END bracket
   ), # tab panel END bracket
