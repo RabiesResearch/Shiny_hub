@@ -12,6 +12,9 @@ tagList( #needed for shinyjs
                  tags$style(
                    # navbar alterations
                    #'.navbar-default .navbar-brand {color: black; font-weight: bold;}',
+                   # Set the font family
+                   "h5 {line-height: 1.2;}",
+                   #"* { font-family: Arial, sans-serif !important; }",
                    # well alterations
                    ".well {background-color:#ffffff; border: 0px solid #336699; padding: 5px; box-shadow: none; }",
                    #Padding of columns
@@ -76,10 +79,16 @@ tagList( #needed for shinyjs
                    ".team-page-icon-box {width:100%; height:100%; min-height: 45vh; background-color:white;
                    border: 0px; margin-bottom: 2px; float: left; position: relative; object-fit: scale-down;}",
                    ".team-page-icon {width: 100%; height: 100%; min-height: 45vh; background-color: white;
-                   border: 0px; position: absolute; object-fit: scale-down; vertical-align: middle;}",
+                   border: 0px; position: absolute; object-fit: scale-down; margin-top: 0;}",
                    ".team-page-text {width: 100%; height: 30vh; display: table-cell;
                    vertical-align: middle; margin: auto 0;}",
-
+                   # Testing new team page layouts
+                   "@media screen and (max-width: 400px) {
+                     .team-page-img {max-width: 180px; width: 180px; float: left; margin-right: 2%; border: 1px solid black;}
+                     .team-page-txt {max-width: 100%; margin-top: 0; float: left;}}",
+                   "@media screen and (min-width: 401px){
+                     .team-page-img {max-width: 180px; width: 180px; float: left; margin-right: 2%; border: 1px solid black;}
+                     .team-page-txt {max-width: 100%; margin-top: 0; float: none;}}",
                    #HTML("<base target='_blank'>"),
                    HTML("hr {border-top: 2px dotted #7c7c7c;}",
                         ".tabbable > .nav > li > a {color:black}")
@@ -149,7 +158,7 @@ tagList( #needed for shinyjs
                               div(class = "landing-page-icon", style="background-image: url(maps/stz_map.png);
                                   background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br> S. Tanzania"),
-                                               class="landing-page-button-stacked-1"
+                                           class="landing-page-button-stacked-1"
                                            #icon = icon("arrow-circle-right", "icon-lp")
                                            #onclick ="window.open('https://rsteenson.github.io/webtest/', '_blank')"
                               ),
@@ -256,15 +265,13 @@ tagList( #needed for shinyjs
                                    # Katie Hampson
                                    fluidRow(
                                      column(3),
-                                     column(2, class="landing-page-column",
-                                            div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/no_pic.jpg);
-                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
-                                     column(4, div(class="team-page-text",
-                                                   h4(tags$b("Dr. Katie Hampson ")),
-                                                   h5(HTML("<em></em>")),
-                                                   h5(""))
+                                     column(6, class="landing-page-column",
+                                            h4("Dr. Katie Hampson", style="font-weight: bold;"),
+                                            h5("", style="font-style: italic;"),
+                                            div(style="display: inline-block;",
+                                                img(src="team/no_pic.jpg", class="team-page-img"),
+                                                div(class="team-page-txt",
+                                                    h5("")))
                                      ), # column END bracket
                                      column(3)
                                    ), # row END bracket
@@ -272,51 +279,47 @@ tagList( #needed for shinyjs
                                      br()
                                    ), # row END bracket
                                    fluidRow(
-                                   #---------------#
-                                   # Kirstyn Brunker
-                                     column(2, class="landing-page-column",
-                                            div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/kirstyn_b2.jpg);
-                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
-                                     column(4,
-                                            div(class="team-page-text",
-                                                h4(tags$b("Dr. Kirstyn Brunker"), HTML("&emsp;"),
-                                                   tags$a(href = "https://twitter.com/kirstynbrunker",  icon("twitter"),
-                                                          target="_blank", class="text-primary")),
-                                                h5(HTML("<em>Postdoctoral Researcher</em>")),
-                                                h5("I am interested in how genomic data can be used to improve our understanding of
+                                     #---------------#
+                                     # Kirstyn Brunker
+                                     column(6, class="landing-page-column",
+                                            h4("Dr. Kirstyn Brunker", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/kirstynbrunker",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
+                                            h5("Postdoctoral Researcher", style="font-style: italic;"),
+                                            div(style="display: inline-block;",
+                                                img(src="team/kirstyn_b2.jpg", class="team-page-img"),
+                                                div(class="team-page-txt",
+                                                    h5("I am interested in how genomic data can be used to improve our understanding of
                                                    infectious disease dynamics. In particular, how genomic surveillance can be used
                                                    to guide dog Rabies elimination programmes across Asia and Africa."),
-                                                h5("My research involves developing techniques to sequence Rabies virus;
+                                                    h5("My research involves developing techniques to sequence Rabies virus;
                                                    integrate genomic and epidemiological data to perform advanced phylodynamic
                                                    analyses and develop landscape approaches to determine the factors that drive
                                                    rabies virus transmission."),
-                                                h5("I am also interested in developing methods that improve genomic surveillance
+                                                    h5("I am also interested in developing methods that improve genomic surveillance
                                                    capacity in low- and middle-income countries. Recently, I have been developing a
                                                    lab-in-a-suitcase approach, using Oxford Nanopore’s MinION sequencer, to build
                                                    capacity for Rabies genomic surveillance in low-resource settings. This has been
-                                                   successfully tested in the field in Tanzania."))
+                                                   successfully tested in the field in Tanzania.")))
                                      ), # column END bracket
                                      #---------------#
                                      # Elaine Ferguson
-                                     column(2, class="landing-page-column",
-                                            div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/elaine_f2.jpg);
-                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
-                                     column(4, div(class="team-page-text",
-                                                   h4(tags$b("Dr. Elaine Ferguson "), HTML("&emsp;"),
+                                            column(6, class="landing-page-column",
+                                                   h4("Dr. Elaine Ferguson", style="font-weight: bold;", HTML("&emsp;"),
                                                       tags$a(href = "https://twitter.com/ElaineAFerguson",  icon("twitter"),
                                                              target="_blank", class="text-primary")),
-                                                   h5(HTML("<em>Postdoctoral Research Assistant</em>")),
-                                                   h5("Elaine uses data collected by the field teams in Tanzania on rabies cases, dog bites
+                                                   h5("Data Collector", style="font-style: italic;"),
+                                                   div(style="display: inline-block;",
+                                                       img(src="team/elaine_f2.jpg", class="team-page-img"),
+                                                       div(class="team-page-txt",
+                                                           h5("Elaine uses data collected by the field teams in Tanzania on rabies cases, dog bites
                                                       and vaccination to inform statistical analyses and computational models of rabies dynamics."),
-                                                   h5("This work seeks to assess or predict the impact of control efforts on rabies incidence
+                                                           h5("This work seeks to assess or predict the impact of control efforts on rabies incidence
                                                       across different landscapes, and to aid the design of control strategies that efficiently
                                                       eliminate rabies."),
-                                                   h5("Through these analyses, Elaine also aims to determine the roles of dog movements and
-                                                      the density and distribution of dog populations in maintaining rabies transmission."))
+                                                           h5("Through these analyses, Elaine also aims to determine the roles of dog movements and
+                                                      the density and distribution of dog populations in maintaining rabies transmission.")))
+
                                      ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
@@ -325,70 +328,63 @@ tagList( #needed for shinyjs
                                    fluidRow(
                                      #-------------#
                                      # Anna Czupryna
-                                     column(2, class="landing-page-column",
-                                            div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/anna_c2.jpg);
-                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
-                                     column(4, div(class="team-page-text",
-                                                   h4(tags$b("Anna Czupryna ")),
-                                                   h5(HTML("<em>Postdoctoral Research Assistant </em>")),
-                                                   h5("Anna Czupryna is a Postdoctoral researcher based at the University of Glasgow, working
+                                     column(6, class="landing-page-column",
+                                            h4("Anna Czupryna", style="font-weight: bold;"),
+                                            h5("Postdoctoral Research Assistant", style="font-style: italic;"),
+                                            div(style="display: inline-block;",
+                                                img(src="team/anna_c2.jpg", class="team-page-img"),
+                                                div(class="team-page-txt",
+                                                    h5("Anna Czupryna is a Postdoctoral researcher based at the University of Glasgow, working
                                                       in Tanzania coordinating field research activities for the Rabies Elimination Project. "),
-                                                   h5("She received her Ph.D. from the University of Illinois at Chicago studying domestic dog
-                                                      population dynamics in villages near Serengeti National Park in Tanzania. Her dissertation
-                                                      research, 'The Ecology of Free-Roaming Domestic Dogs in Rural Villages near Serengeti National
-                                                      Park,' involved an innovative multidisciplinary approach that integrated demography,
-                                                      endocrinology and public health. "),
-                                                   h5("Anna is currently working with the field team in Mugumu, near Serengeti National Park, on
-                                                      streamlining data collection, developing training programs for village rabies coordinators,
-                                                      and coordinating data collection, dog vaccination, and research protocols. "))
+                                                    h5("She received her Ph.D. from the University of Illinois at Chicago studying domestic dog
+                                                       population dynamics in villages near Serengeti National Park in Tanzania. Her dissertation
+                                                       research, 'The Ecology of Free-Roaming Domestic Dogs in Rural Villages near Serengeti National
+                                                       Park,' involved an innovative multidisciplinary approach that integrated demography,
+                                                       endocrinology and public health. "),
+                                                    h5("Anna is currently working with the field team in Mugumu, near Serengeti National Park, on
+                                                       streamlining data collection, developing training programs for village rabies coordinators,
+                                                       and coordinating data collection, dog vaccination, and research protocols. ")))
                                      ), # column END bracket
                                      #---------------#
                                      # Rachel Steenson
-                                     column(2, class="landing-page-column",
-                                            div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/rachel_s.jpg);
-                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
-                                     column(4, div(class="team-page-text",
-                                                   h4(tags$b("Rachel Steenson "), HTML("&emsp;"),
+                                            column(6, class="landing-page-column",
+                                                   h4("Rachel Steenson", style="font-weight: bold;", HTML("&emsp;"),
                                                       tags$a(href = "https://twitter.com/RachelSSteenson",  icon("twitter"),
                                                              target="_blank", class="text-primary")),
-                                                   h5(HTML("<em>Research Assistant</em>")),
-                                                   h5("My role involves developing code pipelines to clean, process, analyse and visualise
+                                                   h5("Research Assistant", style="font-style: italic;"),
+                                                   div(style="display: inline-block;",
+                                                       img(src="team/rachel_s.jpg", class="team-page-img"),
+                                                       div(class="team-page-txt",
+                                                           h5("My role involves developing code pipelines to clean, process, analyse and visualise
                                                       data with minimal user input; these pipelines are used to create fortnightly progress and
                                                       caselist reports for the field team, provide efficient frameworks for modelling, and build
                                                       the websites available through this Hub."),
-                                                   h5("I’m also responsible for fixing issues in our contact tracing data and
-                                                      updating spatial files to match the continually changing semi-rural areas in Tanzania."))
+                                                           h5("I’m also responsible for fixing issues in our contact tracing data and
+                                                      updating spatial files to match the continually changing semi-rural areas in Tanzania.")))
                                      ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
                                      br()
                                    ), # row END bracket
                                    fluidRow(
-                                   #---------------#
-                                   # Laurie Baker
-                                     column(2, class="landing-page-column",
-                                            div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/laurie_b.jpg);
-                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
-                                     column(4,
-                                            div(class="team-page-text",
-                                                h4(tags$b("Dr. Laurie Baker"), HTML("&emsp;"),
-                                                   tags$a(href = "https://twitter.com/llbaker1707",  icon("twitter"),
-                                                          target="_blank", class="text-primary")),
-                                                h5(HTML("<em></em>")),
-                                                h5("Laurie's research focuses on the elimination of rabies in European foxes over the last four
+                                     #---------------#
+                                     # Laurie Baker
+                                     column(6, class="landing-page-column",
+                                            h4("Dr. Laurie Baker", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/llbaker1707",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
+                                            h5("Data Collector", style="font-style: italic;"),
+                                            div(style="display: inline-block;",
+                                                img(src="team/laurie_b.jpg", class="team-page-img"),
+                                                div(class="team-page-txt",
+                                                    h5("Laurie's research focuses on the elimination of rabies in European foxes over the last four
                                                    decades. Specifically, she is interested in studying the determinants of rabies persistence
                                                    and evaluating how vaccination strategies can be optimised to eliminate infection. "),
-                                                h5("To do this she is applying new Bayesian statistical approaches to study the dynamics of fox
+                                                    h5("To do this she is applying new Bayesian statistical approaches to study the dynamics of fox
                                                    Rabies over the last 30 years in Western Europe in response to oral rabies vaccination programmes."),
-                                                h5("She is working with several collaborators on this project: Thomas Müller and Conrad Freuling at the
+                                                    h5("She is working with several collaborators on this project: Thomas Müller and Conrad Freuling at the
                                                    Friedrich-Loeffler Institute in Germany, Elias Krainski at the Universidade Federal do Paraná,
-                                                   and Håvard Rue at King Abdullah University of Science and Technology (KAUST)."))
+                                                   and Håvard Rue at King Abdullah University of Science and Technology (KAUST).")))
                                      ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
@@ -407,84 +403,76 @@ tagList( #needed for shinyjs
                                    fluidRow(
                                      #---------------#
                                      # Matiko Tiringa
-                                     column(2, class="landing-page-column",
-                                            div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/matiko_t.jpg);
-                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
-                                     column(4, div(class="team-page-text",
-                                                   h4(tags$b("Matiko Tiringa ")),
-                                                   h5(HTML("<em>Project Field Officer</em>")),
-                                                   h5("Matiko carries out contact tracing in Serengeti and Ngorongoro districts. Individuals
+                                     column(6, class="landing-page-column",
+                                            h4("Matiko Tiringa", style="font-weight: bold;"),
+                                            h5("Project Field Officer", style="font-style: italic;"),
+                                            div(style="display: inline-block;",
+                                                img(src="team/matiko_t.jpg", class="team-page-img"),
+                                                div(class="team-page-txt",
+                                                    h5("Matiko carries out contact tracing in Serengeti and Ngorongoro districts. Individuals
                                                       bitten by an animal are located and interviewed to collect detailed data on a bite incident,
-                                                      and decide if it was a probable Rabies exposure. He follows the chain of interactions to
-                                                      other human and animal bite victims to identify how the infection began, collecting data
-                                                      at every step and educating communities about Rabies. "),
-                                                   h5("Matiko also collects tissue samples from recently deceased probable Rabid animals, and
-                                                      completes a Rapid Diagnostic Test to gain a preliminary result on Rabies status. These
-                                                      samples are then sent to the laboratory for confirmation and sequencing."))
+                                                     and decide if it was a probable Rabies exposure. He follows the chain of interactions to
+                                                     other human and animal bite victims to identify how the infection began, collecting data
+                                                     at every step and educating communities about Rabies. "),
+                                                    h5("Matiko also collects tissue samples from recently deceased probable Rabid animals, and
+                                                     completes a Rapid Diagnostic Test to gain a preliminary result on Rabies status. These
+                                                     samples are then sent to the laboratory for confirmation and sequencing.")))
                                      ), # column END bracket
                                      #---------------#
                                      # Zilpah Kaare
-                                     column(2, class="landing-page-column",
-                                            div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/ziplah_k.jpg);
-                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                                ), # column END bracket
-                                     column(4, div(class="team-page-text",
-                                                   h4(tags$b("Zilpah Kaare")),
-                                                   h5(HTML("<em>Data Collector</em>")),
-                                                   h5("Zilpah collects and collates hospital records within the study areas involved in the project.
-                                                      She also enters and uploads data into the project database."))
-                                                   ) # column END bracket
-                                     ), # row END bracket
+                                     column(6, class="landing-page-column",
+                                            h4("Zilpah Kaare", style="font-weight: bold;"),
+                                            h5("Data Collector", style="font-style: italic;"),
+                                            div(style="display: inline-block;",
+                                                img(src="team/zilpah_k2.jpg", class="team-page-img"),
+                                                div(class="team-page-txt",
+                                                    h5("Zilpah collects and collates hospital records within the study areas involved in the project.
+                                                      She also enters and uploads data into the project database.")))
+                                     ) # column END bracket
+                                   ), # row END bracket
                                    fluidRow(
                                      br()
-                                     ), # row END bracket
+                                   ), # row END bracket
                                    fluidRow(
                                      #---------------#
                                      # Kennedy Lushasi
-                                     column(2, class="landing-page-column",
-                                            div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/kennedy_l.jpg);
-                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
-                                     column(4, div(class="team-page-text",
-                                                   h4(tags$b("Kennedy Lushasi ")),
-                                                   h5(HTML("<em>AO-ASPIRE PhD Student</em>")),
-                                                   h5("Kennedy uses active and genomic surveillance approaches to inform the development
+                                     column(6, class="landing-page-column",
+                                            h4("Kennedy Lushasi", style="font-weight: bold;"),
+                                            h5("AO-ASPIRE PhD Student", style="font-style: italic;"),
+                                            div(style="display: inline-block;",
+                                                img(src="team/kennedy_l.jpg", class="team-page-img"),
+                                                div(class="team-page-txt",
+                                                    h5("Kennedy uses active and genomic surveillance approaches to inform the development
                                                       of guidelines for the elimination of dog-mediated Rabies, across Southern and Northern
                                                       Tanzania as well as Pemba Island."),
-                                                   h5("This involves: implementing schemes to determine case
+                                                    h5("This involves: implementing schemes to determine case
                                                       detection in different settings; assessing costs of active case-finding and feasibility
                                                       within a One Health framework; evaluating the critical criteria to identify and confirm
                                                       Rabies cases; and piloting field sequencing approaches to assess the sources and frequency
                                                       of incursions."),
-                                                   h5("Kennedy works very closely with government health and veterinary workers
+                                                    h5("Kennedy works very closely with government health and veterinary workers
                                                       that coordinate field operations, district medical and veterinary officers, livestock
-                                                      field officers, public health workers, and the wider community."))
+                                                      field officers, public health workers, and the wider community.")))
                                      ), # column END bracket
                                      #---------------#
                                      # Ahmed Lugelo
-                                     column(2, class="landing-page-column",
-                                            div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/ahmed_l.jpg);
-                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
-                                     column(4, div(class="team-page-text",
-                                                   h4(tags$b("Ahmed Lugelo ")),
-                                                   h5(HTML("<em>AO-ASPIRE PhD Student</em>")),
-                                                   h5("Over the past 6 years, I have coordinated surveillance and control of Rabies research in
+                                     column(6, class="landing-page-column",
+                                            h4("Ahmed Lugelo", style="font-weight: bold;"),
+                                            h5("AO-ASPIRE PhD Student", style="font-style: italic;"),
+                                            div(style="display: inline-block;",
+                                                img(src="team/ahmed_l2.jpg", class="team-page-img"),
+                                                div(class="team-page-txt",
+                                                    h5("Over the past 6 years, I have coordinated surveillance and control of Rabies research in
                                                       Northern Tanzania. My PhD focuses on the development of a cost-effective and sustainable
                                                       strategy for regional elimination of rabies."),
-                                                   h5("This involves: developing and conducting field tests to determine the performance of
+                                                    h5("This involves: developing and conducting field tests to determine the performance of
                                                       ‘Temperature Controlled Storage Devices’ (TCSD); implementing a randomized control trial
                                                       to determine the potency of thermotolerant rabies vaccine (Nobivac® Rabies vaccine) following
                                                       storage in novel TCSD at varying field conditions; and evaluate the vaccination coverage
                                                       achieved by Centralized Team-Led strategy and Decentralized Community-Led strategies."),
-                                                   h5("I work closely with local communities, government animal health professionals (MoLFD), as
+                                                    h5("I work closely with local communities, government animal health professionals (MoLFD), as
                                                       well as multiple research institutes including Sokoine University of Agriculture, Ifakara
-                                                      Health Institute, University of Glasgow and Washington State University."))
+                                                      Health Institute, University of Glasgow and Washington State University.")))
                                      ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
@@ -493,45 +481,41 @@ tagList( #needed for shinyjs
                                    fluidRow(
                                      #---------------#
                                      # Maganga Sambo
-                                     column(2, class="landing-page-column",
-                                            div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/maganga_s.jpg);
-                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
-                                     column(4, div(class="team-page-text",
-                                                   h4(tags$b("Maganga Sambo ")),
-                                                   h5(HTML("<em>PhD Student</em>")),
-                                                   h5("Mass vaccination is known to be the cornerstone for effective control of canine rabies; however,
+                                     column(6, class="landing-page-column",
+                                            h4("Maganga Sambo", style="font-weight: bold;"),
+                                            h5("PhD Student", style="font-style: italic;"),
+                                            div(style="display: inline-block;",
+                                                img(src="team/maganga_s2.jpg", class="team-page-img"),
+                                                div(class="team-page-txt",
+                                                    h5("Mass vaccination is known to be the cornerstone for effective control of canine rabies; however,
                                                       there is little scientific guidance for the best way of evaluating and monitoring the success of the
                                                       implementations of dog vaccination campaigns."),
-                                                   h5("Maganga's PhD focuses on measuring, monitoring and improving mass dog vaccination programmes to
+                                                    h5("Maganga's PhD focuses on measuring, monitoring and improving mass dog vaccination programmes to
                                                       inform control and eliminate rabies."),
-                                                   h5("Maganga conducted post-vaccination evaluations: households, school-based and transect surveys.
+                                                    h5("Maganga conducted post-vaccination evaluations: households, school-based and transect surveys.
                                                       He compared these survey methods to see which methods provide precise estimates of vaccination
                                                       coverage and dog population sizes. This work guides the ongoing and future dog vaccinations on a
-                                                      large scale in sub-Saharan Africa"))
+                                                      large scale in sub-Saharan Africa")))
                                      ), # column END bracket
                                      #---------------#
                                      # Joel Changalucha
-                                     column(2, class="landing-page-column",
-                                            div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/joel_c.jpg);
-                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
-                                     column(4, div(class="team-page-text",
-                                                   h4(tags$b("Joel Changalucha")),
-                                                   h5(HTML("<em>Research Scientist</em>")),
-                                                   h5("Joel has extensive history on One-Health surveillance approaches; his recent research
+                                     column(6, class="landing-page-column",
+                                            h4("Joel Changalucha", style="font-weight: bold;"),
+                                            h5("Research Scientist", style="font-style: italic;"),
+                                            div(style="display: inline-block;",
+                                                img(src="team/joel_c2.jpg", class="team-page-img"),
+                                                div(class="team-page-txt",
+                                                    h5("Joel has extensive history on One-Health surveillance approaches; his recent research
                                                       involves piloting a surveillance system whereby health and veterinary workers report Rabies
-                                                      cases, animal bites, use of post-exposure vaccines and mass dog vaccination campaigns using
-                                                      a mobile phone app. "),
-                                                   h5("Joel’s interest is on evaluating public health intervention using social and economic approaches.
-                                                      His responsibilities include: developing cost effective intervention for controlling diseases;
-                                                      developing methods of evaluating these interventions; and aligning the research needs to the
-                                                      existing health and veterinary system to enable smooth integrations of research findings."),
-                                                   h5("Joel brings to his position a well-established background in health system and clinical practice
-                                                      of rural settings; this has helped in sustaining the requirements of the mobile phone surveillance
-                                                      system in Tanzania."))
+                                                       cases, animal bites, use of post-exposure vaccines and mass dog vaccination campaigns using
+                                                       a mobile phone app. "),
+                                                    h5("Joel’s interest is on evaluating public health intervention using social and economic approaches.
+                                                       His responsibilities include: developing cost effective intervention for controlling diseases
+                                                       and methods of evaluating these interventions; aligning the research needs to the
+                                                       existing health and veterinary system to enable smooth integrations of research findings."),
+                                                    h5("Joel brings to his position a well-established background in health system and clinical practice
+                                                       of rural settings; this has helped in sustaining the requirements of the mobile phone surveillance
+                                                       system in Tanzania.")))
                                      ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
@@ -540,41 +524,37 @@ tagList( #needed for shinyjs
                                    fluidRow(
                                      #---------------#
                                      # Lwitiko Sikana
-                                     column(2, class="landing-page-column",
-                                            div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/sikana_l.jpg);
-                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                                ), # column END bracket
-                                     column(4, div(class="team-page-text",
-                                                   h4(tags$b("Lwitiko Sikana ")),
-                                                   h5(HTML("<em>MSc Student</em>")),
-                                                   h5("Lwitiko has been working on implementing rabies research in Tanzania for almost ten years, such
+                                     column(6, class="landing-page-column",
+                                            h4("Lwitiko Sikana", style="font-weight: bold;"),
+                                            h5("MSc Student", style="font-style: italic;"),
+                                            div(style="display: inline-block;",
+                                                img(src="team/sikana_l.jpg", class="team-page-img"),
+                                                div(class="team-page-txt",
+                                                    h5("Lwitiko has been working on implementing rabies research in Tanzania for almost ten years, such
                                                       as vaccination campaigns and conducting community engagement projects."),
-                                                   h5("Currently, he is an MSc in Public Health Research candidate at the Nelson Mandela African
-                                                      Institution of Science and Technology in Tanzania) through the Afrique One- African Science
-                                                      Partnership for Intervention Research Excellence (ASPIRE) fellowship."),
-                                                   h5("He is interested in understanding family and community dynamics in the prevention of rabies,
-                                                      which could help in developing an intervention that could be feasible for raising awareness through
-                                                      the use of social practices."))
+                                                    h5("Currently, he is an MSc in Public Health Research candidate at the Nelson Mandela African
+                                                       Institution of Science and Technology in Tanzania) through the Afrique One- African Science
+                                                       Partnership for Intervention Research Excellence (ASPIRE) fellowship."),
+                                                    h5("He is interested in understanding family and community dynamics in the prevention of rabies,
+                                                       which could help in developing an intervention that could be feasible for raising awareness through
+                                                       the use of social practices.")))
                                      ), # column END bracket
                                      #---------------#
                                      # Christian Tetteh Duamor
-                                     column(2, class="landing-page-column",
-                                            div(class="team-page-icon-box",
-                                                div(class = "team-page-icon", style="background-image: url(team/no_pic.jpg);
-                                                    background-size: auto 80%; background-position: center; background-repeat: no-repeat; "))
-                                     ), # column END bracket
-                                     column(4, div(class="team-page-text",
-                                                   h4(tags$b("Christian Tetteh Duamor")),
-                                                   h5(HTML("<em>AO-ASPIRE PhD Student</em>")),
-                                                   h5("Christian’s PhD focuses on building expertise in Community-Led models for delivering and evaluating
+                                     column(6, class="landing-page-column",
+                                            h4("Christian Tetteh Duamor", style="font-weight: bold;"),
+                                            h5("AO-ASPIRE PhD Student", style="font-style: italic;"),
+                                            div(style="display: inline-block;",
+                                                img(src="team/no_pic.jpg", class="team-page-img"),
+                                                div(class="team-page-txt",
+                                                    h5("Christian’s PhD focuses on building expertise in Community-Led models for delivering and evaluating
                                                       health interventions. He is currently conducting process evaluation on on-going trials in Mara Region
                                                       of Tanzania, to determine effective methods of delivering community-based mass dog vaccination
                                                       campaigns against Rabies. "),
-                                                   h5("Christian holds an MSc in Epidemiology and Control of Infectious Diseases (University of Buea, 2015),
+                                                    h5("Christian holds an MSc in Epidemiology and Control of Infectious Diseases (University of Buea, 2015),
                                                       BSc Biological Sciences (Kwame Nkrumah University of Science and Technology, 2010); he also acquired
                                                       Certificate in Management in Health (World Bank Group MOOC, 2015), Certificate Implementation Research
-                                                      (TDR MOOC, 2018) and completed the REC, AVC and CCC from GARC."))
+                                                      (TDR MOOC, 2018) and completed the REC, AVC and CCC from GARC.")))
                                      ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
