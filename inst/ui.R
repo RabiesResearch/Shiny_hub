@@ -75,7 +75,7 @@ tagList( #needed for shinyjs
                       .about-page-logo {max-width: 800px; width: 100%; margin-left: auto; margin-right: auto; display: block; }
                       .about-page-txt {width: 100%; vertical-align: middle; }}",
                    "@media screen and (min-width: 401px){
-                      .about-page-logo {max-width: 800px; width: 80%; margin-left: auto; margin-right: auto; display: block; }
+                      .about-page-logo {max-width: 800px; width: 70%; margin-left: auto; margin-right: auto; display: block; }
                       .about-page-txt {width: 100%; vertical-align: middle; }}",
                    # image alignments for "meet the team"
                    ".team-page-icon-box {width:100%; height:100%; min-height: 45vh; background-color:white;
@@ -248,11 +248,14 @@ tagList( #needed for shinyjs
                    img(src="logos/tz_banner.png", class="about-page-logo")
                  ), # row END bracket
                  fluidRow(
-                   br(), br()
+                   br()
                  ), # row END bracket
                  fluidRow(
                    h3("Philippines", class="about-page-txt"),
                    img(src="logos/phil_banner.png", class="about-page-logo")
+               ), # row END bracket
+               fluidRow(
+                 br(), br()
                ) # row END bracket
              ) # main panel END bracket
   ), # tab panel END bracket
