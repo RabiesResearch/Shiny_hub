@@ -427,7 +427,9 @@ tagList( #needed for shinyjs
                                  mainPanel(
                                    width = 11, style="margin-left:4%; margin-right:4%",
                                    fluidRow(
-                                     h3("Tanzania-based Team", style="text-align:center; margin-top:0px;"), hr()
+                                     h3("Tanzania-based Team", style="text-align:center; margin-top:0px;"),
+                                     h5("Listed alphabetically", style="text-align:center; font-style: italic;"),
+                                     hr()
                                    ), #row END bracket
                                    fluidRow(
                                      #---------------#
