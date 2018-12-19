@@ -267,11 +267,13 @@ tagList( #needed for shinyjs
              navbarMenu(title = " Meet the teams", icon = icon("users"),
                         #-------------------------------------------------------
                         # Glasgow Team section
-                        tabPanel(title = "Glasgow Team",
+                        tabPanel(title = "Glasgow-based",
                                  mainPanel(
                                    width = 11, style="margin-left:4%; margin-right:4%",
                                    fluidRow(
-                                     h3("Glasgow Team", style="text-align:center; margin-top:0px;"), hr()
+                                     h3("Glasgow-based Team", style="text-align:center; margin-top:0px;"),
+                                     h5("Listed alphabetically", style="text-align:center; font-style: italic;"),
+                                     hr()
                                    ), #row END bracket
                                    #---------------#
                                    # Katie Hampson
@@ -421,11 +423,11 @@ tagList( #needed for shinyjs
                         ), # tab panel END bracket
                         #-------------------------------------------------------
                         # Tanzania Team section
-                        tabPanel(title = "Tanzania Team",
+                        tabPanel(title = "Tanzania-based",
                                  mainPanel(
                                    width = 11, style="margin-left:4%; margin-right:4%",
                                    fluidRow(
-                                     h3("Tanzania Team", style="text-align:center; margin-top:0px;"), hr()
+                                     h3("Tanzania-based Team", style="text-align:center; margin-top:0px;"), hr()
                                    ), #row END bracket
                                    fluidRow(
                                      #---------------#
