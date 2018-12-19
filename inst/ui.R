@@ -186,10 +186,12 @@ tagList( #needed for shinyjs
                               div("Romblon & Oriental Mindoro", class = "landing-page-box-title"),
                               div(class = "landing-page-icon", style="background-image: url(maps/phil_study_map.png);
                                   background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
-                              actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br>"),
-                                           class="landing-page-button"
-                                           #icon = icon("arrow-circle-right", "icon-lp")#,
-                                           #onclick ="window.open('https://rsteenson.github.io/webtest/', '_blank')"
+                              actionButton('',
+                                           label=HTML("<font class='text-primary'>Go to Philippines Website</font> <br><br>
+                                                      <em>Surveillance, Phylogenetics <br> & Epidemiology</em>"),
+                                           class="landing-page-button",
+                                           icon = icon("arrow-circle-right", "icon-lp"),
+                                           onclick ="window.open('https://rabiesresearch.github.io/SPEEDIER/', '_blank')"
                               ))
                         ) # row END bracket
                  ), # column END bracket
