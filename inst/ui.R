@@ -255,15 +255,84 @@ tagList( #needed for shinyjs
                  fluidRow(
                    h3("Philippines", class="about-page-txt"),
                    img(src="logos/phil_banner.png", class="about-page-logo")
-               ), # row END bracket
-               fluidRow(
-                 br(), br()
-               ) # row END bracket
-             ) # main panel END bracket
-  ), # tab panel END bracket
+                 ), # row END bracket
+                 fluidRow(
+                   br(), br()
+                 ) # row END bracket
+               ) # main panel END bracket
+             ), # tab panel END bracket
 
              #------------------------------------------------------------------
-             # Create Contact tab panel
+             # Create Publications tab panel
+             tabPanel(
+               title = " Publications", icon = icon("file-text"),
+               mainPanel(
+                 width = 11, style="margin-left:4%; margin-right:4%",
+                 fluidRow(
+                   h2("Publications", style="text-align:center;"),
+                   h4("The following acts as a general list for publications that researchers
+                      in this group have contributed to:", style="text-align:center;"),
+                 hr()
+                 ), # row END bracket
+                 fluidRow(
+                   h5(HTML("<a href=https://www.sciencedirect.com/science/article/pii/S0264410X18315202?via%3Dihub target=blank>Rajeev et al. (2018)</a>"),
+                      " Healthcare utilisation, provisioning of post-exposure prophylaxis and estimation of human rabies burden in Madagascar.", HTML("<em> Vaccine</em>")),
+                   h5(HTML("<a href=https://www.sciencedirect.com/science/article/pii/S0264410X18315196?via%3Dihub target=blank>Hampson et al. (2018)</a>"),
+                      " Modelling to inform prophylaxis regimens to prevent human rabies.", HTML("<em> Vaccine</em>")),
+                   h5(HTML("<a href=https://www.thelancet.com/journals/laninf/article/PIIS1473-3099%2818%2930512-7/fulltext target=blank>WHO rabies modelling consortium (2018)</a>"),
+                      " The potential effect of improved provision of rabies postexposure prophylaxis in Gavi-eligible countries: a modelling study.", HTML("<em> Lancet Infectious Diseases</em>")),
+                   h5(HTML("<a href=https://www.researchgate.net/publication/325272044_The_risk_of_rabies_spread_in_Japan_a_mathematical_modelling_assessment target=blank>Kadowaki et al. (2018)</a>"),
+                      " The risk of rabies spread in Japan: a mathematical modeling assessment.", HTML("<em> Epidemiology and Infection</em>"), " 146(10): 1245-1252"),
+                   h5(HTML("<a href=https://royalsocietypublishing.org/doi/full/10.1098/rspb.2017.1880 target=blank>Cleaveland et al. (2017)</a>"),
+                      " Rabies elimination research: juxtaposing optimism, pragmatism and realism. ", HTML("<em> Proc Roy Soc B</em>"), " 284(1869)"),
+                   h5(HTML("<a href=https://bmcvetres.biomedcentral.com/articles/10.1186/s12917-017-1051-2 target=blank>The International Companion Animal Management Coalition (2017)</a>"),
+                      " Scoping review of indicators and methods of measurement used to evaluate the impact of dog population management interventions.", HTML("<em> BMC Veterinary Research</em>"), " 13:143"),
+                   h5(HTML("<a href=https://royalsocietypublishing.org/doi/10.1098/rstb.2016.0168 target=blank> Cleaveland et al. (2017)</a>"),
+                      " One health contributions towards more effective and equitable approaches to health in low- and middle-income countries.", HTML("<em> Phil Trans Roy Soc B</em>")),
+                   h5(HTML("<a href=https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0005435 target=blank>Kurosawa (2017)</a>"),
+                      " The rise and fall of rabies in Japan: a quantitative history of rabies epidemics in Osaka Prefecture, 1914-1933.", HTML("<em> PLoS NTDs </em>"), " 11(3)"),
+                   h5(HTML("<a href=https://www.researchgate.net/publication/287967225_Difficulties_in_Estimating_the_Human_Burden_of_Canine_Rabies target=blank>Taylor (2016)</a>"),
+                      " Difficulties in Estimating the Human Burden of Canine Rabies.", HTML("<em> Acta Tropica</em>"), " 15: 30184-4"),
+                   h5(HTML("<a href=https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0003709 target=blank>Hampson et al. (2015)</a>"),
+                      " Estimating the Global Burden of Canine Rabies.", HTML("<em> PLoS Neglected Tropical Diseases </em>"), " 9(4)"),
+                   h5(HTML("<a href=http://science.sciencemag.org/content/345/6204/1562.full target=blank>Lankester (2014)</a>"),
+                      " Implementing Pasteur's vision for rabies elimination.", HTML("<em> Science </em>"), " 345 (6204)"),
+                   h5(HTML("<a href=https://veterinaryrecord.bmj.com/content/175/8/188 target=blank>Cleaveland et al. (2014)</a>"),
+                      " Rabies control and elimination: a test case for One Health.", HTML("<em> Veterinary Record</em>")),
+                   h5(HTML("<a href=https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/1365-2664.12279 target=blank>Morters et al. (2014)</a>"),
+                      " The demography of free-roaming dog populations and applications to disease and population control.", HTML("<em> Journal of Animal Ecology</em>")),
+                   h5(HTML("<a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3973266/ target=blank>Mollentze et al. (2014)</a>"),
+                      " A Bayesian approach for inferring the dynamics of partially observed endemic infectious diseases from space-time-genetic data.", HTML("<em> Proceedings of the Royal Society, Series B </em>")),
+                   h5(HTML("<a href=https://ojvr.org/index.php/ojvr/article/view/731 target=blank>Cleaveland et al. (2014)</a>"),
+                      " The changing landscape of rabies epidemiology and control.", HTML("<em> Onderspoort Veterinary Journal</em>")),
+                   h5(HTML("<a href=https://www.ncbi.nlm.nih.gov/pubmed/24280252 target=blank>Vos et al. (2013)</a>"),
+                      " Bovine Rabies in Turkey: patterns of infection and implications for costs and control.", HTML("<em> Epidemiology and Infection</em>")),
+                   h5(HTML("<a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3720040/ target=blank>Freuling et al. (2013)</a>"),
+                      " Elimination of fox rabies from Europe: determinants of success and lessons for the future.", HTML("<em> Phil. Trans. Roy. Soc.</em>")),
+                   h5(HTML("<a href=https://www.sciencedirect.com/science/article/pii/S0147957112001221 target=blank>Townsend et al. (2013)</a>"),
+                      " Surveillance guidelines for disease elimination: a case study of canine rabies.", HTML("<em> Comparative Immunology, Microbiology & Infectious Diseases</em>")),
+                   h5(HTML("<a href=https://www.sciencedirect.com/science/article/pii/S0166354213000582 target=blank>Swiff et al. (2013)</a>"),
+                      " Potential economic benefits of eliminating canine rabies.", HTML("<em> Antiviral research</em>")),
+                   h5(HTML("<a href=https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/j.1365-2656.2012.02033.x target=blank>Morters et al. (2012)</a>"),
+                      " Evidence-based control of canine rabies: a critical review of population density reduction.", HTML("<em> Journal of Animal Ecology</em>")),
+                   h5(HTML("<a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3526958/ target=blank>Brunker et al. (2012)</a>"),
+                      " Integrating the landscape epidemiology and genetics of RNA viruses: rabies in domestic dogs as a model.", HTML("<em> Parasitology</em>")),
+                   h5(HTML("<a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3289591/ target=blank>Lembo et al. (2012)</a>"),
+                      " The Blueprint for Rabies Prevention and Control: A Novel Operational Toolkit for Rabies Elimination.", HTML("<em> PLoS Neglected Tropical Diseases</em>")),
+                   h5(HTML("<a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3050908/ target=blank>Hampson et al. (2011)</a>"),
+                      " Evaluation of cost-effective strategies for rabies post-exposure vaccination in low-income countries.", HTML("<em> PLoS Neglected Tropical Diseases</em>")),
+                   h5(HTML("<a href=https://journals.plos.org/plosntds/article?id=10.1371/journal.pntd.0000626 target=blank>Lembo et al. (2010)</a>"),
+                      " The feasibility of canine rabies elimination in Africa: dispelling doubts with data.", HTML("<em> PLoS Neglected Tropical Diseases</em>")),
+                   h5(HTML("<a href=https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1863501/ target=blank>Hampson et al. (2007)</a>"),
+                      " Synchronous cycles of domestic dog rabies in sub-Saharan Africa and the impact of control efforts.", HTML("<em> PNAS</em>"))
+                 ),
+                 fluidRow(
+                   br(), br()
+                 ) # row END bracket
+               ) # main panel END bracket
+             ), # tab panel END bracket
+             #------------------------------------------------------------------
+             # Create Team tab panel
              navbarMenu(title = " Meet the teams", icon = icon("users"),
                         #-------------------------------------------------------
                         # Glasgow Team section
@@ -297,7 +366,7 @@ tagList( #needed for shinyjs
                                                     h5("She is working with several collaborators on this project: Thomas Müller and Conrad Freuling at the
                                                        Friedrich-Loeffler Institute in Germany, Elias Krainski at the Universidade Federal do Paraná,
                                                        and Håvard Rue at King Abdullah University of Science and Technology (KAUST).")))
-                                                    ), # column END bracket
+                                     ), # column END bracket
                                      #---------------#
                                      # Kirstyn Brunker
                                      column(6, class="landing-page-column",
@@ -320,7 +389,7 @@ tagList( #needed for shinyjs
                                                        lab-in-a-suitcase approach, using Oxford Nanopore’s MinION sequencer, to build
                                                        capacity for Rabies genomic surveillance in low-resource settings. This has been
                                                        successfully tested in the field in Tanzania.")))
-                                                    ) # column END bracket
+                                     ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
                                      br()
@@ -340,7 +409,7 @@ tagList( #needed for shinyjs
                                                        canine rabies vaccination campaigns.  "),
                                                     h5("My current research looks at the use of mobile phone text messaging and religious and tribal leaders
                                                        in raising awareness of rabies and to encourage participation in communities in rural Tanzania. ")))
-                                                    ), # column END bracket
+                                     ), # column END bracket
                                      #-------------#
                                      # Anna Czupryna
                                      column(6, class="landing-page-column",
@@ -359,7 +428,7 @@ tagList( #needed for shinyjs
                                                     h5("Anna is currently working with the field team in Mugumu, near Serengeti National Park, on
                                                        streamlining data collection, developing training programs for village rabies coordinators,
                                                        and coordinating data collection, dog vaccination, and research protocols. ")))
-                                                    ) # column END bracket
+                                     ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
                                      br()
@@ -382,17 +451,17 @@ tagList( #needed for shinyjs
                                                        eliminate rabies."),
                                                     h5("Through these analyses, Elaine also aims to determine the roles of dog movements and
                                                        the density and distribution of dog populations in maintaining rabies transmission.")))
-                                                    ), # column END bracket
+                                     ), # column END bracket
                                      #---------------#
                                      # Katie Hampson
                                      column(6, class="landing-page-column",
-                                              h4("Dr. Katie Hampson", style="font-weight: bold;"),
-                                              h5("", style="font-style: italic;"),
-                                              div(style="display: inline-block;",
-                                                  img(src="team/no_pic.jpg", class="team-page-img"),
-                                                  div(class="team-page-txt",
-                                                      h5("")))
-                                       ) # column END bracket
+                                            h4("Dr. Katie Hampson", style="font-weight: bold;"),
+                                            h5("", style="font-style: italic;"),
+                                            div(style="display: inline-block;",
+                                                img(src="team/no_pic.jpg", class="team-page-img"),
+                                                div(class="team-page-txt",
+                                                    h5("")))
+                                     ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
                                      br()
@@ -414,7 +483,7 @@ tagList( #needed for shinyjs
                                                        the websites available through this Hub."),
                                                     h5("I'm also responsible for fixing issues in our contact tracing data and
                                                        updating spatial files to match the continually changing semi-rural areas in Tanzania.")))
-                                                    ) # column END bracket
+                                     ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
                                      br(), br()
@@ -451,7 +520,7 @@ tagList( #needed for shinyjs
                                                     h5("Joel brings to his position a well-established background in health system and clinical practice
                                                        of rural settings; this has helped in sustaining the requirements of the mobile phone surveillance
                                                        system in Tanzania.")))
-                                                    ), # column END bracket
+                                     ), # column END bracket
                                      #---------------#
                                      # Christian Tetteh Duamor
                                      column(6, class="landing-page-column",
@@ -468,7 +537,7 @@ tagList( #needed for shinyjs
                                                        BSc Biological Sciences (Kwame Nkrumah University of Science and Technology, 2010); he also acquired
                                                        Certificate in Management in Health (World Bank Group MOOC, 2015), Certificate Implementation Research
                                                        (TDR MOOC, 2018) and completed the REC, AVC and CCC from GARC.")))
-                                                    ) # column END bracket
+                                     ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
                                      br()
@@ -484,7 +553,7 @@ tagList( #needed for shinyjs
                                                 div(class="team-page-txt",
                                                     h5("Zilpah collects and collates hospital records within the study areas involved in the project.
                                                        She also enters and uploads data into the project database.")))
-                                                    ), # column END bracket
+                                     ), # column END bracket
                                      #---------------#
                                      # Ahmed Lugelo
                                      column(6, class="landing-page-column",
@@ -504,7 +573,7 @@ tagList( #needed for shinyjs
                                                     h5("I work closely with local communities, government animal health professionals (MoLFD), as
                                                        well as multiple research institutes including Sokoine University of Agriculture, Ifakara
                                                        Health Institute, University of Glasgow and Washington State University.")))
-                                                    ) # column END bracket
+                                     ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
                                      br()
@@ -529,7 +598,7 @@ tagList( #needed for shinyjs
                                                     h5("Kennedy works very closely with government health and veterinary workers
                                                        that coordinate field operations, district medical and veterinary officers, livestock
                                                        field officers, public health workers, and the wider community.")))
-                                                    ), # column END bracket
+                                     ), # column END bracket
                                      #---------------#
                                      # Maganga Sambo
                                      column(6, class="landing-page-column",
@@ -547,7 +616,7 @@ tagList( #needed for shinyjs
                                                        He compared these survey methods to see which methods provide precise estimates of vaccination
                                                        coverage and dog population sizes. This work guides the ongoing and future dog vaccinations on a
                                                        large scale in sub-Saharan Africa")))
-                                                    ) # column END bracket
+                                     ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
                                      br()
@@ -569,7 +638,7 @@ tagList( #needed for shinyjs
                                                     h5("He is interested in understanding family and community dynamics in the prevention of rabies,
                                                        which could help in developing an intervention that could be feasible for raising awareness through
                                                        the use of social practices.")))
-                                                    ), # column END bracket
+                                     ), # column END bracket
                                      #---------------#
                                      # Matiko Tiringa
                                      column(6, class="landing-page-column",
