@@ -222,10 +222,11 @@ tagList( #needed for shinyjs
                               div("", class = "landing-page-box-title"),
                               div(class = "landing-page-icon", style="background-image: url(maps/latin_america_study_map.png);
                                   background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
-                              actionButton('', label=HTML("<p class='text-primary'>App being prepared</p> <br>"),
-                                           class="landing-page-button"
-                                           #icon = icon("arrow-circle-right", "icon-lp")
-                                           #onclick ="window.open('https://rsteenson.github.io/webtest/', '_blank')"
+                              actionButton('', label=HTML("<font class='text-primary'>Go to Latin America App</font> <br><br>
+                                                      <em>Progress of Rabies Control <br> & Elimination Programmes</em>"),
+                                           class="landing-page-button",
+                                           icon = icon("arrow-circle-right", "icon-lp"),
+                                           onclick ="window.open('https://boydorr.shinyapps.io/paho_rabies/', '_blank')"
                               ))
                         ) # row END bracket
                  ) # column END bracket
@@ -413,7 +414,7 @@ tagList( #needed for shinyjs
                                      #-------------#
                                      # Anna Czupryna
                                      column(6, class="landing-page-column",
-                                            h4("Anna Czupryna", style="font-weight: bold;"),
+                                            h4("Dr. Anna Czupryna", style="font-weight: bold;"),
                                             h5("Postdoctoral Research Assistant", style="font-style: italic;"),
                                             div(style="display: inline-block;",
                                                 img(src="team/anna_c2.jpg", class="team-page-img"),
@@ -544,17 +545,6 @@ tagList( #needed for shinyjs
                                    ), # row END bracket
                                    fluidRow(
                                      #---------------#
-                                     # Zilpah Kaare
-                                     column(6, class="landing-page-column",
-                                            h4("Zilpah Kaare", style="font-weight: bold;"),
-                                            h5("Data Clerk", style="font-style: italic;"),
-                                            div(style="display: inline-block;",
-                                                img(src="team/zilpah_k2.jpg", class="team-page-img"),
-                                                div(class="team-page-txt",
-                                                    h5("Zilpah collects and collates hospital records within the study areas involved in the project.
-                                                       She also enters and uploads data into the project database.")))
-                                     ), # column END bracket
-                                     #---------------#
                                      # Ahmed Lugelo
                                      column(6, class="landing-page-column",
                                             h4("Ahmed Lugelo", style="font-weight: bold;"),
@@ -573,12 +563,7 @@ tagList( #needed for shinyjs
                                                     h5("I work closely with local communities, government animal health professionals (MoLFD), as
                                                        well as multiple research institutes including Sokoine University of Agriculture, Ifakara
                                                        Health Institute, University of Glasgow and Washington State University.")))
-                                     ) # column END bracket
-                                   ), # row END bracket
-                                   fluidRow(
-                                     br()
-                                   ), # row END bracket
-                                   fluidRow(
+                                     ), # column END bracket
                                      #---------------#
                                      # Kennedy Lushasi
                                      column(6, class="landing-page-column",
@@ -598,7 +583,12 @@ tagList( #needed for shinyjs
                                                     h5("Kennedy works very closely with government health and veterinary workers
                                                        that coordinate field operations, district medical and veterinary officers, livestock
                                                        field officers, public health workers, and the wider community.")))
-                                     ), # column END bracket
+                                     ) # column END bracket
+                                   ), # row END bracket
+                                   fluidRow(
+                                     br()
+                                   ), # row END bracket
+                                   fluidRow(
                                      #---------------#
                                      # Maganga Sambo
                                      column(6, class="landing-page-column",
@@ -616,12 +606,7 @@ tagList( #needed for shinyjs
                                                        He compared these survey methods to see which methods provide precise estimates of vaccination
                                                        coverage and dog population sizes. This work guides the ongoing and future dog vaccinations on a
                                                        large scale in sub-Saharan Africa")))
-                                     ) # column END bracket
-                                   ), # row END bracket
-                                   fluidRow(
-                                     br()
-                                   ), # row END bracket
-                                   fluidRow(
+                                     ), # column END bracket
                                      #---------------#
                                      # Lwitiko Sikana
                                      column(6, class="landing-page-column",
@@ -638,7 +623,12 @@ tagList( #needed for shinyjs
                                                     h5("He is interested in understanding family and community dynamics in the prevention of rabies,
                                                        which could help in developing an intervention that could be feasible for raising awareness through
                                                        the use of social practices.")))
-                                     ), # column END bracket
+                                      ) # column END bracket
+                                   ), # row END bracket
+                                   fluidRow(
+                                     br()
+                                   ), # row END bracket
+                                   fluidRow(
                                      #---------------#
                                      # Matiko Tiringa
                                      column(6, class="landing-page-column",
