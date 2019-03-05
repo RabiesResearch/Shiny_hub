@@ -273,7 +273,7 @@ tagList( #needed for shinyjs
                    h2("Publications", style="text-align:center;"),
                    h4("The following acts as a general list for publications that researchers
                       in this group have contributed to:", style="text-align:center;"),
-                 hr()
+                   hr()
                  ), # row END bracket
                  fluidRow(
                    h5(HTML("<a href=https://www.sciencedirect.com/science/article/pii/S0264410X18315202?via%3Dihub target=blank>Rajeev et al. (2018)</a>"),
@@ -545,6 +545,21 @@ tagList( #needed for shinyjs
                                    ), # row END bracket
                                    fluidRow(
                                      #---------------#
+                                     # Husna Hoffu
+                                     column(6, class="landing-page-column",
+                                            h4("Husna Hoffu", style="font-weight: bold;"),
+                                            h5("Research Officer, Ifakara Health Institute", style="font-style: italic;"),
+                                            div(style="display: inline-block;",
+                                                img(src="team/husna_h2.jpg", class="team-page-img"),
+                                                div(class="team-page-txt",
+                                                    h5("Husna works under the Rabies Elimination Fellowship (REF) project, supporting PhD students. This involves
+                                                       using mobile surveillance systems, whatsap platforms and free hotline calls to report rabid cases and exposures,
+                                                       as well as incorporating different views and thinking of stakeholders."),
+                                                    h5("Husna works closely with health workers and Veterinary officers, so as to link cases reported in the community
+                                                       and at health facility level. She is a Social worker by training, holding a bachelor Degree with maternal health
+                                                       experience through various projects she is involved with in the Institute e.g. Non Pneumatic Ant Shock Garment, M HEALTH Project.")))
+                                     ), # column END bracket
+                                     #---------------#
                                      # Ahmed Lugelo
                                      column(6, class="landing-page-column",
                                             h4("Ahmed Lugelo", style="font-weight: bold;"),
@@ -563,7 +578,12 @@ tagList( #needed for shinyjs
                                                     h5("I work closely with local communities, government animal health professionals (MoLFD), as
                                                        well as multiple research institutes including Sokoine University of Agriculture, Ifakara
                                                        Health Institute, University of Glasgow and Washington State University.")))
-                                     ), # column END bracket
+                                     ) # column END bracket
+                                   ), # row END bracket
+                                   fluidRow(
+                                     br()
+                                   ), # row END bracket
+                                   fluidRow(
                                      #---------------#
                                      # Kennedy Lushasi
                                      column(6, class="landing-page-column",
@@ -583,12 +603,7 @@ tagList( #needed for shinyjs
                                                     h5("Kennedy works very closely with government health and veterinary workers
                                                        that coordinate field operations, district medical and veterinary officers, livestock
                                                        field officers, public health workers, and the wider community.")))
-                                     ) # column END bracket
-                                   ), # row END bracket
-                                   fluidRow(
-                                     br()
-                                   ), # row END bracket
-                                   fluidRow(
+                                     ), # column END bracket
                                      #---------------#
                                      # Maganga Sambo
                                      column(6, class="landing-page-column",
@@ -606,7 +621,12 @@ tagList( #needed for shinyjs
                                                        He compared these survey methods to see which methods provide precise estimates of vaccination
                                                        coverage and dog population sizes. This work guides the ongoing and future dog vaccinations on a
                                                        large scale in sub-Saharan Africa")))
-                                     ), # column END bracket
+                                     ) # column END bracket
+                                   ), # row END bracket
+                                   fluidRow(
+                                     br()
+                                   ), # row END bracket
+                                   fluidRow(
                                      #---------------#
                                      # Lwitiko Sikana
                                      column(6, class="landing-page-column",
@@ -623,12 +643,7 @@ tagList( #needed for shinyjs
                                                     h5("He is interested in understanding family and community dynamics in the prevention of rabies,
                                                        which could help in developing an intervention that could be feasible for raising awareness through
                                                        the use of social practices.")))
-                                      ) # column END bracket
-                                   ), # row END bracket
-                                   fluidRow(
-                                     br()
-                                   ), # row END bracket
-                                   fluidRow(
+                                     ), # column END bracket
                                      #---------------#
                                      # Matiko Tiringa
                                      column(6, class="landing-page-column",
