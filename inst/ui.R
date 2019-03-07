@@ -414,7 +414,9 @@ tagList( #needed for shinyjs
                                      #-------------#
                                      # Anna Czupryna
                                      column(6, class="landing-page-column",
-                                            h4("Dr. Anna Czupryna", style="font-weight: bold;"),
+                                            h4("Dr. Anna Czupryna", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/AnnaSerengeti",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
                                             h5("Postdoctoral Research Assistant", style="font-style: italic;"),
                                             div(style="display: inline-block;",
                                                 img(src="team/anna_c2.jpg", class="team-page-img"),
@@ -456,12 +458,18 @@ tagList( #needed for shinyjs
                                      #---------------#
                                      # Katie Hampson
                                      column(6, class="landing-page-column",
-                                            h4("Dr. Katie Hampson", style="font-weight: bold;"),
-                                            h5("", style="font-style: italic;"),
+                                            h4("Dr. Katie Hampson", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/hampson_katie",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
+                                            h5("Wellcome Senior Research Fellow", style="font-style: italic;"),
                                             div(style="display: inline-block;",
-                                                img(src="team/no_pic.jpg", class="team-page-img"),
+                                                img(src="team/katie_h3.jpg", class="team-page-img"),
                                                 div(class="team-page-txt",
-                                                    h5("")))
+                                                    h5("Katie works on the epidemiological dynamics and control of rabies using field data
+                                                       (contact tracing, sequencing, mobile surveillance landmass dog vaccinations) with quantitative
+                                                       analyses to address fundamental and applied questions."),
+                                                    h5("She collaborates with international organisations and governments to develop models to learn
+                                                       from control efforts, with a focus on disease elimination. ")))
                                      ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
@@ -528,7 +536,7 @@ tagList( #needed for shinyjs
                                             h4("Christian Tetteh Duamor", style="font-weight: bold;"),
                                             h5("Afrique-ONE ASPIRE PhD Student", style="font-style: italic;"),
                                             div(style="display: inline-block;",
-                                                img(src="team/no_pic.jpg", class="team-page-img"),
+                                                img(src="team/christian_td.jpg", class="team-page-img"),
                                                 div(class="team-page-txt",
                                                     h5("Christian’s PhD focuses on building expertise in Community-Led models for delivering and evaluating
                                                        health interventions. He is currently conducting process evaluation on on-going trials in Mara Region
