@@ -513,7 +513,9 @@ tagList( #needed for shinyjs
                                      #---------------#
                                      # Joel Changalucha
                                      column(6, class="landing-page-column",
-                                            h4("Joel Changalucha", style="font-weight: bold;"),
+                                            h4("Joel Changalucha", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/changalucha",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
                                             h5("Research Scientist", style="font-style: italic;"),
                                             div(style="display: inline-block;",
                                                 img(src="team/joel_c2.jpg", class="team-page-img"),
@@ -533,7 +535,9 @@ tagList( #needed for shinyjs
                                      #---------------#
                                      # Christian Tetteh Duamor
                                      column(6, class="landing-page-column",
-                                            h4("Christian Tetteh Duamor", style="font-weight: bold;"),
+                                            h4("Christian Tetteh Duamor", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/duamort",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
                                             h5("Afrique-ONE ASPIRE PhD Student", style="font-style: italic;"),
                                             div(style="display: inline-block;",
                                                 img(src="team/christian_td.jpg", class="team-page-img"),
@@ -555,7 +559,9 @@ tagList( #needed for shinyjs
                                      #---------------#
                                      # Husna Hoffu
                                      column(6, class="landing-page-column",
-                                            h4("Husna Hoffu", style="font-weight: bold;"),
+                                            h4("Husna Hoffu", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/husnahoffu",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
                                             h5("Research Officer, Ifakara Health Institute", style="font-style: italic;"),
                                             div(style="display: inline-block;",
                                                 img(src="team/husna_h2.jpg", class="team-page-img"),
@@ -570,7 +576,9 @@ tagList( #needed for shinyjs
                                      #---------------#
                                      # Felix Lankaster
                                      column(6, class="landing-page-column",
-                                            h4("Dr. Felix Lankester", style="font-weight: bold;"),
+                                            h4("Dr. Felix Lankester", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/felixjlankester",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
                                             h5("Assistant Professor & Director of Rabies Free Tanzania", style="font-style: italic;"),
                                             div(style="display: inline-block;",
                                                 img(src="team/felix_l2.jpg", class="team-page-img"),
@@ -587,7 +595,9 @@ tagList( #needed for shinyjs
                                      #---------------#
                                      # Ahmed Lugelo
                                      column(6, class="landing-page-column",
-                                            h4("Ahmed Lugelo", style="font-weight: bold;"),
+                                            h4("Ahmed Lugelo", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/alugelo",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
                                             h5("Afrique-ONE ASPIRE PhD Student", style="font-style: italic;"),
                                             div(style="display: inline-block;",
                                                 img(src="team/ahmed_l2.jpg", class="team-page-img"),
@@ -607,7 +617,9 @@ tagList( #needed for shinyjs
                                      #---------------#
                                      # Kennedy Lushasi
                                      column(6, class="landing-page-column",
-                                            h4("Kennedy Lushasi", style="font-weight: bold;"),
+                                            h4("Kennedy Lushasi", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/KenyLushasi",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
                                             h5("Afrique-ONE ASPIRE PhD Student", style="font-style: italic;"),
                                             div(style="display: inline-block;",
                                                 img(src="team/kennedy_l.jpg", class="team-page-img"),
@@ -632,7 +644,9 @@ tagList( #needed for shinyjs
                                      #---------------#
                                      # Maganga Sambo
                                      column(6, class="landing-page-column",
-                                            h4("Maganga Sambo", style="font-weight: bold;"),
+                                            h4("Maganga Sambo", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/MagangaSambo",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
                                             h5("PhD Student, University of Glasgow", style="font-style: italic;"),
                                             div(style="display: inline-block;",
                                                 img(src="team/maganga_s2.jpg", class="team-page-img"),
@@ -650,7 +664,9 @@ tagList( #needed for shinyjs
                                      #---------------#
                                      # Lwitiko Sikana
                                      column(6, class="landing-page-column",
-                                            h4("Lwitiko Sikana", style="font-weight: bold;"),
+                                            h4("Lwitiko Sikana", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/lwsikana",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
                                             h5("Afrique-ONE ASPIRE MSc Student", style="font-style: italic;"),
                                             div(style="display: inline-block;",
                                                 img(src="team/sikana_l.jpg", class="team-page-img"),
