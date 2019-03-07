@@ -568,6 +568,23 @@ tagList( #needed for shinyjs
                                                        experience through various projects she is involved with in the Institute e.g. Non Pneumatic Ant Shock Garment, M HEALTH Project.")))
                                      ), # column END bracket
                                      #---------------#
+                                     # Felix Lankaster
+                                     column(6, class="landing-page-column",
+                                            h4("Dr. Felix Lankester", style="font-weight: bold;"),
+                                            h5("Assistant Professor & Director of Rabies Free Tanzania", style="font-style: italic;"),
+                                            div(style="display: inline-block;",
+                                                img(src="team/felix_l2.jpg", class="team-page-img"),
+                                                div(class="team-page-txt",
+                                                    h5("Felix works with Washington State University and Global Animal Health Tanzania to carry research on
+                                                       intervention strategies, with a particular focus on efforts to bring mass dog vaccination to remote rural
+                                                       communities in a cost-effective manner. ")))
+                                     ) # column END bracket
+                                   ), # row END bracket
+                                   fluidRow(
+                                     br()
+                                   ), # row END bracket
+                                   fluidRow(
+                                     #---------------#
                                      # Ahmed Lugelo
                                      column(6, class="landing-page-column",
                                             h4("Ahmed Lugelo", style="font-weight: bold;"),
@@ -586,12 +603,7 @@ tagList( #needed for shinyjs
                                                     h5("I work closely with local communities, government animal health professionals (MoLFD), as
                                                        well as multiple research institutes including Sokoine University of Agriculture, Ifakara
                                                        Health Institute, University of Glasgow and Washington State University.")))
-                                     ) # column END bracket
-                                   ), # row END bracket
-                                   fluidRow(
-                                     br()
-                                   ), # row END bracket
-                                   fluidRow(
+                                     ), # column END bracket
                                      #---------------#
                                      # Kennedy Lushasi
                                      column(6, class="landing-page-column",
@@ -611,7 +623,12 @@ tagList( #needed for shinyjs
                                                     h5("Kennedy works very closely with government health and veterinary workers
                                                        that coordinate field operations, district medical and veterinary officers, livestock
                                                        field officers, public health workers, and the wider community.")))
-                                     ), # column END bracket
+                                     ) # column END bracket
+                                   ), # row END bracket
+                                   fluidRow(
+                                     br()
+                                   ), # row END bracket
+                                   fluidRow(
                                      #---------------#
                                      # Maganga Sambo
                                      column(6, class="landing-page-column",
@@ -629,12 +646,7 @@ tagList( #needed for shinyjs
                                                        He compared these survey methods to see which methods provide precise estimates of vaccination
                                                        coverage and dog population sizes. This work guides the ongoing and future dog vaccinations on a
                                                        large scale in sub-Saharan Africa")))
-                                     ) # column END bracket
-                                   ), # row END bracket
-                                   fluidRow(
-                                     br()
-                                   ), # row END bracket
-                                   fluidRow(
+                                     ), # column END bracket
                                      #---------------#
                                      # Lwitiko Sikana
                                      column(6, class="landing-page-column",
@@ -651,7 +663,9 @@ tagList( #needed for shinyjs
                                                     h5("He is interested in understanding family and community dynamics in the prevention of rabies,
                                                        which could help in developing an intervention that could be feasible for raising awareness through
                                                        the use of social practices.")))
-                                     ), # column END bracket
+                                     ) # column END bracket
+                                   ), # row END bracket
+                                   fluidRow(
                                      #---------------#
                                      # Matiko Tiringa
                                      column(6, class="landing-page-column",
