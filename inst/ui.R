@@ -128,7 +128,7 @@ tagList( #needed for shinyjs
                    column(4, class="landing-page-column",
                           div(class="landing-page-box",
                               div("Mara Region", class = "landing-page-box-title"),
-                              div(class = "landing-page-icon", style="background-image: url(maps/mara_map.png);
+                              div(class = "landing-page-icon", style="background-image: url(maps/mara_map.jpg);
                                   background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br>
                                                           <em>Implementation research on vaccination and surveillance approaches</em>"),
@@ -140,7 +140,7 @@ tagList( #needed for shinyjs
                    column(4, class="landing-page-column",
                           div(class="landing-page-box",
                               div("Serengeti & Ngorongoro Districts", class = "landing-page-box-title"),
-                              div(class = "landing-page-icon", style="background-image: url(maps/ser_ngor_map.png);
+                              div(class = "landing-page-icon", style="background-image: url(maps/ser_ngor_map.jpg);
                                   background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('',
                                            label=HTML("<font class='text-primary'>Go to Serengeti Website</font> <br><br>
@@ -157,7 +157,7 @@ tagList( #needed for shinyjs
                    column(4, class="landing-page-column",
                           div(class="landing-page-box",
                               div("S. Tanzania and Pemba Island", class = "landing-page-box-title"),
-                              div(class = "landing-page-icon", style="background-image: url(maps/stz_map.png);
+                              div(class = "landing-page-icon", style="background-image: url(maps/stz_map.jpg);
                                   background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br> S. Tanzania"),
                                            class="landing-page-button-stacked-1"
@@ -184,7 +184,7 @@ tagList( #needed for shinyjs
                           class="landing-page-column",
                           div(class="landing-page-box",
                               div("Romblon & Oriental Mindoro", class = "landing-page-box-title"),
-                              div(class = "landing-page-icon", style="background-image: url(maps/phil_study_map.png);
+                              div(class = "landing-page-icon", style="background-image: url(maps/phil_study_map.jpg);
                                   background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('',
                                            label=HTML("<font class='text-primary'>Go to Philippines Website</font> <br><br>
@@ -203,7 +203,7 @@ tagList( #needed for shinyjs
                           class="landing-page-column",
                           div(class="landing-page-box",
                               div("", class = "landing-page-box-title"),
-                              div(class = "landing-page-icon", style="background-image: url(maps/indon_study_map.png);
+                              div(class = "landing-page-icon", style="background-image: url(maps/indon_study_map.jpg);
                                   background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br>"),
                                            class="landing-page-button"
@@ -220,7 +220,7 @@ tagList( #needed for shinyjs
                           class="landing-page-column",
                           div(class="landing-page-box",
                               div("", class = "landing-page-box-title"),
-                              div(class = "landing-page-icon", style="background-image: url(maps/latin_america_study_map.png);
+                              div(class = "landing-page-icon", style="background-image: url(maps/latin_america_study_map.jpg);
                                   background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<font class='text-primary'>Go to Latin America App</font> <br><br>
                                                       <em>Progress of Rabies Control <br> & Elimination Programmes</em>"),
