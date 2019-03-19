@@ -128,7 +128,7 @@ tagList( #needed for shinyjs
                    column(4, class="landing-page-column",
                           div(class="landing-page-box",
                               div("Mara Region", class = "landing-page-box-title"),
-                              div(class = "landing-page-icon", style="background-image: url(maps/mara_map.png);
+                              div(class = "landing-page-icon", style="background-image: url(maps/mara_map.jpg);
                                   background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br>
                                                           <em>Implementation research on vaccination and surveillance approaches</em>"),
@@ -140,7 +140,7 @@ tagList( #needed for shinyjs
                    column(4, class="landing-page-column",
                           div(class="landing-page-box",
                               div("Serengeti & Ngorongoro Districts", class = "landing-page-box-title"),
-                              div(class = "landing-page-icon", style="background-image: url(maps/ser_ngor_map.png);
+                              div(class = "landing-page-icon", style="background-image: url(maps/ser_ngor_map.jpg);
                                   background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('',
                                            label=HTML("<font class='text-primary'>Go to Serengeti Website</font> <br><br>
@@ -157,7 +157,7 @@ tagList( #needed for shinyjs
                    column(4, class="landing-page-column",
                           div(class="landing-page-box",
                               div("S. Tanzania and Pemba Island", class = "landing-page-box-title"),
-                              div(class = "landing-page-icon", style="background-image: url(maps/stz_map.png);
+                              div(class = "landing-page-icon", style="background-image: url(maps/stz_map.jpg);
                                   background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br> S. Tanzania"),
                                            class="landing-page-button-stacked-1"
@@ -184,7 +184,7 @@ tagList( #needed for shinyjs
                           class="landing-page-column",
                           div(class="landing-page-box",
                               div("Romblon & Oriental Mindoro", class = "landing-page-box-title"),
-                              div(class = "landing-page-icon", style="background-image: url(maps/phil_study_map.png);
+                              div(class = "landing-page-icon", style="background-image: url(maps/phil_study_map.jpg);
                                   background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('',
                                            label=HTML("<font class='text-primary'>Go to Philippines Website</font> <br><br>
@@ -203,7 +203,7 @@ tagList( #needed for shinyjs
                           class="landing-page-column",
                           div(class="landing-page-box",
                               div("", class = "landing-page-box-title"),
-                              div(class = "landing-page-icon", style="background-image: url(maps/indon_study_map.png);
+                              div(class = "landing-page-icon", style="background-image: url(maps/indon_study_map.jpg);
                                   background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<p class='text-primary'>Website being prepared</p> <br>"),
                                            class="landing-page-button"
@@ -220,7 +220,7 @@ tagList( #needed for shinyjs
                           class="landing-page-column",
                           div(class="landing-page-box",
                               div("", class = "landing-page-box-title"),
-                              div(class = "landing-page-icon", style="background-image: url(maps/latin_america_study_map.png);
+                              div(class = "landing-page-icon", style="background-image: url(maps/latin_america_study_map.jpg);
                                   background-size: auto 100%; background-position: center; background-repeat: no-repeat; "),
                               actionButton('', label=HTML("<font class='text-primary'>Go to Latin America App</font> <br><br>
                                                       <em>Progress of Rabies Control <br> & Elimination Programmes</em>"),
@@ -414,7 +414,9 @@ tagList( #needed for shinyjs
                                      #-------------#
                                      # Anna Czupryna
                                      column(6, class="landing-page-column",
-                                            h4("Dr. Anna Czupryna", style="font-weight: bold;"),
+                                            h4("Dr. Anna Czupryna", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/AnnaSerengeti",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
                                             h5("Postdoctoral Research Assistant", style="font-style: italic;"),
                                             div(style="display: inline-block;",
                                                 img(src="team/anna_c2.jpg", class="team-page-img"),
@@ -456,12 +458,18 @@ tagList( #needed for shinyjs
                                      #---------------#
                                      # Katie Hampson
                                      column(6, class="landing-page-column",
-                                            h4("Dr. Katie Hampson", style="font-weight: bold;"),
-                                            h5("", style="font-style: italic;"),
+                                            h4("Dr. Katie Hampson", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/hampson_katie",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
+                                            h5("Wellcome Senior Research Fellow", style="font-style: italic;"),
                                             div(style="display: inline-block;",
-                                                img(src="team/no_pic.jpg", class="team-page-img"),
+                                                img(src="team/katie_h3.jpg", class="team-page-img"),
                                                 div(class="team-page-txt",
-                                                    h5("")))
+                                                    h5("Katie works on the epidemiological dynamics and control of rabies using field data
+                                                       (contact tracing, sequencing, mobile surveillance landmass dog vaccinations) with quantitative
+                                                       analyses to address fundamental and applied questions."),
+                                                    h5("She collaborates with international organisations and governments to develop models to learn
+                                                       from control efforts, with a focus on disease elimination. ")))
                                      ) # column END bracket
                                    ), # row END bracket
                                    fluidRow(
@@ -505,7 +513,9 @@ tagList( #needed for shinyjs
                                      #---------------#
                                      # Joel Changalucha
                                      column(6, class="landing-page-column",
-                                            h4("Joel Changalucha", style="font-weight: bold;"),
+                                            h4("Joel Changalucha", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/changalucha",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
                                             h5("Research Scientist", style="font-style: italic;"),
                                             div(style="display: inline-block;",
                                                 img(src="team/joel_c2.jpg", class="team-page-img"),
@@ -525,10 +535,12 @@ tagList( #needed for shinyjs
                                      #---------------#
                                      # Christian Tetteh Duamor
                                      column(6, class="landing-page-column",
-                                            h4("Christian Tetteh Duamor", style="font-weight: bold;"),
+                                            h4("Christian Tetteh Duamor", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/duamort",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
                                             h5("Afrique-ONE ASPIRE PhD Student", style="font-style: italic;"),
                                             div(style="display: inline-block;",
-                                                img(src="team/no_pic.jpg", class="team-page-img"),
+                                                img(src="team/christian_td.jpg", class="team-page-img"),
                                                 div(class="team-page-txt",
                                                     h5("Christian’s PhD focuses on building expertise in Community-Led models for delivering and evaluating
                                                        health interventions. He is currently conducting process evaluation on on-going trials in Mara Region
@@ -547,7 +559,9 @@ tagList( #needed for shinyjs
                                      #---------------#
                                      # Husna Hoffu
                                      column(6, class="landing-page-column",
-                                            h4("Husna Hoffu", style="font-weight: bold;"),
+                                            h4("Husna Hoffu", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/husnahoffu",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
                                             h5("Research Officer, Ifakara Health Institute", style="font-style: italic;"),
                                             div(style="display: inline-block;",
                                                 img(src="team/husna_h2.jpg", class="team-page-img"),
@@ -560,9 +574,30 @@ tagList( #needed for shinyjs
                                                        experience through various projects she is involved with in the Institute e.g. Non Pneumatic Ant Shock Garment, M HEALTH Project.")))
                                      ), # column END bracket
                                      #---------------#
+                                     # Felix Lankaster
+                                     column(6, class="landing-page-column",
+                                            h4("Dr. Felix Lankester", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/felixjlankester",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
+                                            h5("Assistant Professor & Director of Rabies Free Tanzania", style="font-style: italic;"),
+                                            div(style="display: inline-block;",
+                                                img(src="team/felix_l2.jpg", class="team-page-img"),
+                                                div(class="team-page-txt",
+                                                    h5("Felix works with Washington State University and Global Animal Health Tanzania to carry research on
+                                                       intervention strategies, with a particular focus on efforts to bring mass dog vaccination to remote rural
+                                                       communities in a cost-effective manner. ")))
+                                     ) # column END bracket
+                                   ), # row END bracket
+                                   fluidRow(
+                                     br()
+                                   ), # row END bracket
+                                   fluidRow(
+                                     #---------------#
                                      # Ahmed Lugelo
                                      column(6, class="landing-page-column",
-                                            h4("Ahmed Lugelo", style="font-weight: bold;"),
+                                            h4("Ahmed Lugelo", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/alugelo",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
                                             h5("Afrique-ONE ASPIRE PhD Student", style="font-style: italic;"),
                                             div(style="display: inline-block;",
                                                 img(src="team/ahmed_l2.jpg", class="team-page-img"),
@@ -578,16 +613,13 @@ tagList( #needed for shinyjs
                                                     h5("I work closely with local communities, government animal health professionals (MoLFD), as
                                                        well as multiple research institutes including Sokoine University of Agriculture, Ifakara
                                                        Health Institute, University of Glasgow and Washington State University.")))
-                                     ) # column END bracket
-                                   ), # row END bracket
-                                   fluidRow(
-                                     br()
-                                   ), # row END bracket
-                                   fluidRow(
+                                     ), # column END bracket
                                      #---------------#
                                      # Kennedy Lushasi
                                      column(6, class="landing-page-column",
-                                            h4("Kennedy Lushasi", style="font-weight: bold;"),
+                                            h4("Kennedy Lushasi", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/KenyLushasi",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
                                             h5("Afrique-ONE ASPIRE PhD Student", style="font-style: italic;"),
                                             div(style="display: inline-block;",
                                                 img(src="team/kennedy_l.jpg", class="team-page-img"),
@@ -603,11 +635,18 @@ tagList( #needed for shinyjs
                                                     h5("Kennedy works very closely with government health and veterinary workers
                                                        that coordinate field operations, district medical and veterinary officers, livestock
                                                        field officers, public health workers, and the wider community.")))
-                                     ), # column END bracket
+                                     ) # column END bracket
+                                   ), # row END bracket
+                                   fluidRow(
+                                     br()
+                                   ), # row END bracket
+                                   fluidRow(
                                      #---------------#
                                      # Maganga Sambo
                                      column(6, class="landing-page-column",
-                                            h4("Maganga Sambo", style="font-weight: bold;"),
+                                            h4("Maganga Sambo", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/MagangaSambo",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
                                             h5("PhD Student, University of Glasgow", style="font-style: italic;"),
                                             div(style="display: inline-block;",
                                                 img(src="team/maganga_s2.jpg", class="team-page-img"),
@@ -621,16 +660,13 @@ tagList( #needed for shinyjs
                                                        He compared these survey methods to see which methods provide precise estimates of vaccination
                                                        coverage and dog population sizes. This work guides the ongoing and future dog vaccinations on a
                                                        large scale in sub-Saharan Africa")))
-                                     ) # column END bracket
-                                   ), # row END bracket
-                                   fluidRow(
-                                     br()
-                                   ), # row END bracket
-                                   fluidRow(
+                                     ), # column END bracket
                                      #---------------#
                                      # Lwitiko Sikana
                                      column(6, class="landing-page-column",
-                                            h4("Lwitiko Sikana", style="font-weight: bold;"),
+                                            h4("Lwitiko Sikana", style="font-weight: bold;", HTML("&emsp;"),
+                                               tags$a(href = "https://twitter.com/lwsikana",  icon("twitter"),
+                                                      target="_blank", class="text-primary")),
                                             h5("Afrique-ONE ASPIRE MSc Student", style="font-style: italic;"),
                                             div(style="display: inline-block;",
                                                 img(src="team/sikana_l.jpg", class="team-page-img"),
@@ -643,7 +679,9 @@ tagList( #needed for shinyjs
                                                     h5("He is interested in understanding family and community dynamics in the prevention of rabies,
                                                        which could help in developing an intervention that could be feasible for raising awareness through
                                                        the use of social practices.")))
-                                     ), # column END bracket
+                                     ) # column END bracket
+                                   ), # row END bracket
+                                   fluidRow(
                                      #---------------#
                                      # Matiko Tiringa
                                      column(6, class="landing-page-column",
